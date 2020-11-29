@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Overlock&family=Satisfy&display=swap" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Bootstrap library fonte-awesome -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>LPC - Nous contacter</title>
+    <meta name="description" content="Nous contacter - Le petit Commerce - Prêt à porter - Accessoires - Livraison gratuite - Paiement sécurisé - Projet IFOCOP">
+</head>
+
+<body>
+    <!--Entete-->
+    <header id="haut" class="header_dynamic sticky-top"></header>
+
+    <!--Corps-->
+    <main>
+        <h1>Contactez-nous</h1>
+        <div class="contact">
+
+            <div class="contact-gauche">
+
+
+                <form method="POST" action="#">
+                    <label class="label1" for="nom">Nom*</label><br>
+                    <input class="input1" id="nom" type="text" size="30" placeholder="Votre Nom" required><br>
+
+                    <label class="label1" for="prenom">Prénom*</label><br>
+                    <input class="input1" id="prenom" type="text" size="30" placeholder="Votre Prénom" required><br>
+
+                    <label class="label1" for="entreprise">Entreprise</label><br>
+                    <input class="input1" id="entreprise" type="text" size="30"><br>
+
+                    <label class="label1" for="motif">Motif de contact*</label><br>
+                    <select class="input1" name="motif" id="motif">
+                        <option value="" selected disabled>--- Motif de contact ---</option>
+                        <option value="compte">Compte client</option>
+                        <option value="commande">Commande</option>
+                        <option value="retour-echange">Retour ou échange</option>
+                        <option value="commande-paiement">Commande et paiement</option>
+                        <option value="expedition-livraison">Expédition et livraison</option>
+                        <option value="information-article">Information sur un article</option>
+                        <option value="autre">Autre</option>
+                    </select><br>
+
+                    <label class="label1" for="commande">Numéro de commande</label><br>
+                    <input class="input1" id="commande" type="text" size="30"><br>
+
+                    <label class="label1" for="email">Email*</label><br>
+                    <input class="input1" id="email" type="email" size="30" placeholder="Votre email" required><br>
+
+                    <label class="label1" for="pays">Pays</label><br>
+                    <input class="input1" id="pays" type="text" size="30"><br>
+
+                    <label class="label1" for="message">Message*</label><br>
+                    <textarea id="message" placeholder="Votre message" required></textarea><br>
+                    <p><em>* Champs obligatoires</em></p>
+                    <input class="input-submit" type="submit" value="Valider">
+                </form>
+            </div>
+
+            <div class="contact-droit">
+                <ul>
+                    <li>
+                        <img src="/mes_icons/icons_contact/icon-tel.png" alt="icon téléphone" title="nous appeler">
+                        <h3><strong>NOUS APPELER</strong></h3>
+                        <p class="centrer">Contactez notre service client<br>au <a href="tel:+33130688240">01 30 68 82 40</a>,<br>du lundi au vendredi de 9h à 18h.</p>
+                    </li>
+                    <li>
+                        <img src="/mes_icons/icons_contact/icon-courrier.png" alt="icon courrier" title="nous ecrire">
+                        <h3><strong>NOUS ÉCRIRE</strong></h3>
+                        <p class="centrer"><strong>Le Petit Commerce</strong></p>
+                        <address>
+                                1 Avenue du Grand Commerce<br>
+                                BP 25036<br>
+                                75 005 Paris Cedex<br>
+                            </address>
+                    </li>
+                    <li>
+                        <img src="/mes_icons/icons_contact/icon-question.png" alt="icon question" title="FAQ">
+                        <h3><strong><a href="../informations/faq.html">FOIRE AUX QUESTIONS</a></strong></h3>
+                        <p class="centrer">Retrouvez les questions fréquemment posées</p>
+                    </li>
+                    <li>
+                        <img src="/mes_icons/icons_contact/icon-localisation.png" alt="icon localisation" title="la boutique">
+                        <h3><strong><a href="pointdevente.html">LA BOUTIQUE</a></strong></h3>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+    </main>
+
+    <!--Footer-->
+    <footer class="footer_dynamic"></footer>
+
+    <script src="/javascript/header_footer_injecteur.js"></script>
+
+</body>
+
+</html>

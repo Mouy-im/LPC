@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Overlock&family=Satisfy&display=swap" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/javascript/jquery-ui-1.12.1/jquery-ui.structure.min.css">
+    <link rel="stylesheet" href="/javascript/jquery-ui-1.12.1/jquery-ui.min.css">
+    <!-- Bootstrap library fonte-awesome -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/javascript/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!--Pour mettre le datepicker en français-->
+    <script src="/javascript/datepickerfr.js"></script>
+    <script src="/javascript/datepicker.js"></script>
+    <title>LPC - Reservation</title>
+    <meta name="description" content="Réserver votre date pour un coaching personnalisé - Le petit Commerce - Prêt à porter - Accessoires - Livraison gratuite - Paiement sécurisé - Projet IFOCOP">
+</head>
+
+<body>
+    <!--Entete-->
+    <header id="haut" class="header_dynamic sticky-top"></header>
+
+    <!--Corps-->
+    <main id="bg-reservation">
+
+
+        <div class="form-reservation">
+            <div class="entete-reservation">
+                <h1>Réservation<br>Coaching Personnalisé</h1>
+                <h3 class="reservation">Vous souhaitez des conseils personnalisés,<br> un relooking, pour une occasion en particulier ou pour le plaisir ?<br>N'hésitez plus ! Venez vivre une expérience unique accompagné de l'un de nos conseillers, experts en relooking !
+
+                </h3>
+            </div>
+            <form method="POST" action="#">
+                <label class="label1" for="nom">Nom*</label><br>
+                <input class="input1" id="nom" type="text" size="30" placeholder="Votre Nom" required><br>
+
+                <label class="label1" for="prenom">Prénom*</label><br>
+                <input class="input1" id="prenom" type="text" size="30" placeholder="Votre Prénom" required><br>
+
+                <label class="label1" for="email">Email*</label><br>
+                <input class="input1" id="email" type="email" size="30" placeholder="Votre email" required><br>
+
+                <label class="label1" for="rdv">Choississez votre disponibilité*</label><br>
+                <input class="input1" type="date" id="rdv" name="rdv" min="2020-12-08" max="2022-01-01" required /><br>
+                <div class="datepicker"></div>
+                <label class="label1" for="message">Message*</label><br>
+                <textarea id="message" placeholder="Votre message" required></textarea><br>
+
+
+
+                <p><em>* Champs obligatoires</em></p>
+                <input class="input-submit" type="submit" value="Valider">
+            </form>
+
+
+
+        </div>
+    </main>
+    <!--Footer-->
+    <footer class="footer_dynamic"></footer>
+
+    <script src="/javascript/header_footer_injecteur.js"></script>
+
+</body>
+
+</html>

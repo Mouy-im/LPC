@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Overlock&family=Satisfy&display=swap" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Bootstrap library fonte-awesome -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>LPC - Recrutement</title>
+    <meta name="description" content="Nous rejoindre - Recrutement - Le petit Commerce - Prêt à porter - Accessoires - Livraison gratuite - Paiement sécurisé - Projet IFOCOP">
+</head>
+
+<body>
+    <!--Entete-->
+    <header id="haut" class="header_dynamic sticky-top"></header>
+
+    <!--Corps-->
+    <main class="form-recrutement centrer">
+
+
+
+        <h1>Nous rejoindre</h1>
+        <form method="POST" action="#">
+            <label class="label1" for="nom">Nom*</label><br>
+            <input class="input1" id="nom" type="text" size="30" placeholder="Votre Nom" required><br>
+
+            <label class="label1" for="prenom">Prénom*</label><br>
+            <input class="input1" id="prenom" type="text" size="30" placeholder="Votre Prénom" required><br>
+
+            <label class="label1" for="birthday">Date de naissance</label><br>
+            <input class="input1" type="date" id="birthday" name="birthday" min="2017-04-01" max="1900-01-01" required /><br>
+
+            <label class="label1" for="email">Email*</label><br>
+            <input class="input1" id="email" type="email" size="30" placeholder="Votre email" required><br>
+            <fieldset>
+                <legend>Documents à joindre*</legend>
+                <label class="label1" for="cv">CV</label><br>
+                <input type="file" id="cv" name="cv" accept=".pdf,.doc,.docx,.zip,.rar" required><br>
+
+                <label class="label1" for="motivation">Lettre de motivation</label><br>
+                <input id="motivation" type="file" name="motivation" accept=".pdf,.doc,.docx,.zip,.rar" required><br>
+            </fieldset>
+            <label class="label1" for="message">Message*</label><br>
+            <textarea id="message" placeholder="Votre message" required></textarea><br>
+            <p><em>* Champs obligatoires</em></p>
+            <input class="input-submit" type="submit" value="Valider">
+        </form>
+
+
+
+    </main>
+    <!--Footer-->
+    <footer class="footer_dynamic"></footer>
+
+    <script src="/javascript/header_footer_injecteur.js"></script>
+
+</body>
+
+</html>

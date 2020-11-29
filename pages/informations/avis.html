@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Overlock&family=Satisfy&display=swap" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Bootstrap library fonte-awesome -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>LPC Avis</title>
+    <meta name="description" content="Avis de nos clients - Le petit Commerce - Prêt à porter - Accessoires - Livraison gratuite - Paiement sécurisé - Projet IFOCOP">
+</head>
+
+<body>
+    <!--Entete-->
+    <header id="haut" class="header_dynamic sticky-top"></header>
+
+    <!--Corps-->
+    <main class="container-fluid pages_avis">
+        <h1>Laissez-nous un commentaire ...</h1>
+        <div class="avis">
+
+            <div class="avis_gauche">
+                <h2>Avis</h2>
+                <div><span class="avis_texte">"Un grand merci au Petit Commerce pour vos conseils"</span><br>
+                    <div><span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                    <p class="avis_nom">Marine</p>
+
+                </div>
+                <div class="grey-divider"></div>
+                <div><span class="avis_texte">"Ravi de mon achat, réceptionné dans les délais"</span><br>
+                    <div><span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                    <p class="avis_nom">Pierre</p>
+
+                </div>
+                <div class="grey-divider"></div>
+                <div><span class="avis_texte">"Journée inoubliable avec Eric, expert en relooking"</span><br>
+
+                    <div><span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                    <p class="avis_nom">Julie</p>
+
+                </div>
+                <div class="grey-divider"></div>
+                <div><span class="avis_texte">"Je recommande, bon service client"</span><br>
+                    <div><span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                    <p class="avis_nom">Arnaud</p>
+
+                </div>
+                <div class="grey-divider"></div>
+                <div><span class="avis_texte">"Bien conseillé, le cadeau a été apprécié"</span><br>
+                    <div><span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                    <p class="avis_nom">Romain</p>
+
+                </div>
+                <div class="grey-divider"></div>
+                <div><span class="avis_texte">"Vendeurs agréables et souriants"</span><br>
+                    <div><span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                    <p class="avis_nom">Louise</p>
+
+                </div>
+                <div class="grey-divider"></div>
+            </div>
+            <div class="avis_droit_form">
+                <h2>Mon avis</h2>
+                <form method="POST" action="#">
+                    <label class="label1" for="nom">Nom</label><br>
+                    <input class="input1" id="nom" type="text" size="30" placeholder="Votre Nom"><br>
+
+                    <label class="label1" for="prenom">Prénom*</label><br>
+                    <input class="input1" id="prenom" type="text" size="30" placeholder="Votre Prénom" required><br>
+
+
+                    <label class="label1" for="email">Email*</label><br>
+                    <input class="input1" id="email" type="email" size="30" placeholder="Votre email" required><br>
+
+                    <div class="rating">
+                        <div class="stars">
+                            <i class="fa fa-star gold"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+
+                    </div>
+
+                    <label class="label1" for="message">Commentaire*</label><br>
+                    <textarea id="message" placeholder="Votre commentaire" required></textarea><br>
+                    <p><em>* Champs obligatoires</em></p>
+                    <input class="input-submit" type="submit" value="Valider">
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!--Footer-->
+    <footer class="footer_dynamic"></footer>
+
+    <script src="/javascript/header_footer_injecteur.js"></script>
+
+</body>
+
+</html>

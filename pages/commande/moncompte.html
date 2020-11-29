@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Overlock&family=Satisfy&display=swap" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Bootstrap library fonte-awesome -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>LPC - Mon Compte</title>
+    <meta name="description" content="Mon compte - Se connecter - s'inscrire - Le petit Commerce - Prêt à porter - Accessoires - Livraison gratuite - Paiement sécurisé - Projet IFOCOP">
+</head>
+
+<body>
+    <!--Entete-->
+    <header id="haut" class="header_dynamic sticky-top"></header>
+
+    <!--Corps-->
+    <main>
+
+        <h1>Mon Compte</h1>
+        <div class="connexion">
+
+
+
+            <div class="col-gauche">
+
+
+                <form method="POST" action="#">
+                    <div class="connexion-entete">
+                        <h2>Déjà client</h2>
+                        <h4>Connectez-vous</h4>
+                    </div>
+                    <div class="connexion-form">
+                        <label class="label1" for="email">Email*</label><br>
+                        <input class="input1" id="email" type="email" size="30" placeholder="Votre email" required><br>
+
+                        <label class="label1" for="mdp">Votre mot de passe*</label><br>
+                        <input class="input1" id="mdp" type="password" size="30" name="nom" required><br>
+
+                        <p><em>* Champs obligatoires</em></p>
+                        <input class="input-submit" type="submit" value="Connexion">
+                    </div>
+                </form>
+            </div>
+            <div class="col-droite">
+
+                <form method="POST" action="#">
+
+                    <div class="connexion-entete">
+                        <h2>Nouveau Client</h2>
+                        <h4>Inscrivez-vous</h4>
+                    </div>
+                    <div class="connexion-form">
+                        <span class="civilite">Civilité*</span><br>
+                        <select class="input1" name="civilite" id="civilite">
+                        <option value="" selected disabled>--- Sélectionnez ---</option>
+                        <option value="madame">Madame</option>
+                        <option value="mademoiselle">Mademoiselle</option>
+                        <option value="monsieur">Monsieur</option>
+                    </select><br>
+
+                        <label class="label1" for="nom">Nom*</label><br>
+                        <input class="input1" id="nom" type="text" size="30" placeholder="Votre Nom" required><br>
+
+                        <label class="label1" for="prenom">Prénom*</label><br>
+                        <input class="input1" id="prenom" type="text" size="30" placeholder="Votre Prénom" required><br>
+
+                        <label class="label1" for="new_email">Email*</label><br>
+                        <input class="input1" id="new_email" type="email" size="30" placeholder="Votre email" required><br>
+
+                        <label class="label1" for="new_mdp">Votre mot de passe*</label><br>
+                        <input class="input1" id="new_mdp" type="password" size="30" name="nom" required><br>
+
+                        <label class="label1" for="conf_mdp">Confirmer le mot de passe*</label><br>
+
+                        <input class="input1" id="conf_mdp" type="password" size="30" name="nom" required><br>
+
+                        <input type="checkbox" name="newsletter" id="newsletter"><label for="newsletter">Je souhaite m'inscrire à la newsletter</label><br>
+
+                        <p><em>* Champs obligatoires</em></p>
+                        <input class="input-submit" type="submit" value="Connexion">
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+
+    </main>
+
+    <!--Footer-->
+    <footer class="footer_dynamic"></footer>
+
+    <script src="/javascript/header_footer_injecteur.js"></script>
+
+</body>
+
+</html>
