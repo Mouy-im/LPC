@@ -37,7 +37,7 @@ $(function() {
 
         const retour = document.querySelector('#basdepage .retour-haut');
         window.onscroll = function() {
-            if (document.documentElement.scrollTop > 150) {
+            if (document.documentElement.scrollTop > 150 || (window.innerWidth <= 500 && document.documentElement.scrollTop > 0)) {
                 document.querySelector('#offre').classList.add('scroll_hide');
                 document.querySelector('.logo_menusearch').classList.add('scroll_hide');
                 retour.classList.add('retour_scroll');
@@ -54,6 +54,7 @@ $(function() {
                 document.querySelector('.logo_on_scroll').style.display = 'none';
                 document.querySelector('.menu_principal').style.borderTop = '1px solid grey';
                 document.querySelector('div.navbar').style.boxShadow = 'none';
+                document.querySelector('.menu_principal').style.borderBottom = '1px solid grey';
             }
             if (window.innerWidth <= 991 && document.documentElement.scrollTop < 150) {
 
