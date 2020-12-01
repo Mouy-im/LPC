@@ -17,7 +17,7 @@ a {
 
 li {
     list-style-type: none;
-    font-size: 1.5em;
+    font-size: 1em;
 }
 
 h1 {
@@ -39,16 +39,28 @@ iframe {
     border: none;
 }
 
+span,
+p,
+address,
+label,
+input::placeholder,
+textarea::placeholder,
+input[type="date"],
+input[type="file"],
+a.tel,
+table {
+    font-size: 1.5em;
+}
+
 p {
     text-align: justify;
-    font-size: 1.5em;
 }
 
 .green-divider {
     border-bottom: 4px solid #7de7d6;
     border-radius: 10px;
     width: 60px;
-    margin: 0px auto 20px;
+    margin: 20px auto 20px;
 }
 
 .carousel-control-prev-icon.grey {
@@ -63,6 +75,10 @@ p {
     font-size: 1.5em!important;
 }
 
+i {
+    font-size: 1.3em!important;
+}
+
 
 /*FORMULAIRE*/
 
@@ -71,8 +87,7 @@ p {
     padding: 10px;
     margin-bottom: 10px;
     margin-top: 5px;
-    width: 100%/*360px*/
-    ;
+    width: 100%;
     border: 1px solid rgb(204, 204, 204);
 }
 
@@ -173,8 +188,7 @@ form {
 }
 
 nav.navbar {
-    background-color: rgba(255, 255, 255)/*(77, 165, 180)*/
-    ;
+    background-color: rgba(255, 255, 255);
     margin: 0px;
     padding: 0px;
     /*min-height: 75px;*/
@@ -205,17 +219,17 @@ div.navbar {
 
 .navbar-toggler {
     margin-left: 10px;
+    width: 15%;
 }
 
 div.logo {
-    width: 100%;
     text-align: center;
 }
 
 #langue {
     text-align: center;
     position: absolute;
-    right: 0px;
+    right: 10px;
     top: 35px;
     cursor: pointer;
 }
@@ -228,6 +242,7 @@ div.logo {
 #langue select {
     border-radius: 10px;
     border: 1px solid grey;
+    font-size: 1.5em;
 }
 
 #langue select:focus,
@@ -241,17 +256,6 @@ div.logo {
     border: 1px solid grey;
 }
 
-#menusearch li {
-    display: inline-block;
-    margin: 0px 10px;
-    text-align: center;
-}
-
-#menuconnect_panier ul {
-    text-align: right;
-    margin-bottom: 0px;
-}
-
 #menuconnect_panier {
     position: absolute;
     right: 0px;
@@ -259,12 +263,21 @@ div.logo {
     min-width: 160px;
 }
 
+#menuconnect_panier ul {
+    text-align: right;
+    margin-bottom: 0px;
+}
+
 #menuconnect_panier li {
     display: inline-block;
     margin: 0px 10px;
 }
 
-input.form-control {
+#menuconnect_panier i {
+    font-size: 1.5em!important;
+}
+
+#input_search {
     border: none;
     box-shadow: 0px 10px 10px -10px grey;
     background-color: transparent;
@@ -272,14 +285,14 @@ input.form-control {
     width: 100%;
 }
 
-input.form-control:active {
+#input_search:active {
     border: none;
     box-shadow: 0px 10px 10px -10px grey;
     background-color: transparent;
     border-radius: 0px;
 }
 
-input.form-control:focus {
+#input_search:focus {
     border: none;
     background-color: transparent;
     border-radius: 0px;
@@ -391,10 +404,6 @@ input.form-control:focus {
     height: 530px;
 }
 
-.nav-item_ul li {
-    font-size: 1rem;
-}
-
 .nav-item_ul>li {
     line-height: 1.5em;
 }
@@ -421,10 +430,12 @@ input.form-control:focus {
 }
 
 .menu_divider {
-    border-bottom: 2px solid grey;
-    width: 100px;
-    margin: 10px 0px;
-    text-align: center;
+    border-bottom: 3px solid #7de7d6;
+    border-radius: 10px;
+    width: 60px;
+    margin-left: 25px;
+    margin-top: 10px;
+    margin-bottom: 5px;
 }
 
 
@@ -479,7 +490,6 @@ input.form-control:focus {
 
 .btn_link:hover {
     background-color: rgb(255, 255, 255);
-    /*#FEEDE3*/
     color: #5f5858;
 }
 
@@ -661,12 +671,18 @@ footer {
 
 .news {
     width: 60%;
-    text-align: center;
 }
 
 .news form {
-    text-align: center;
-    margin-top: 10px;
+    margin: 10px auto 20px;
+    min-width: 0px;
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.news form input {
+    margin: 5px;
 }
 
 #reseauxnewsletter .input-submit {
@@ -677,8 +693,7 @@ footer {
 /*FOOTER ARTICLE LIENS*/
 
 #liens {
-    background-color: whitesmoke/*#A97F8E*/
-    ;
+    background-color: whitesmoke;
     display: flex;
     box-sizing: border-box;
     width: 100%;
@@ -702,6 +717,7 @@ footer {
 #liens li a {
     line-height: 1.5em;
     text-decoration: none!important;
+    font-size: 1.5em;
 }
 
 .voir_liens {
@@ -1202,20 +1218,36 @@ input.commander {
 
 .video {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    margin: 50px auto;
+    margin: 0px auto 50px;
 }
 
-.video div {
-    width: 80%;
+.video_et_descr {
+    width: 95%;
+    display: flex;
+    justify-content: space-around;
+    margin: 20px auto;
+    align-items: center;
+}
+
+.video_et_descr:nth-of-type(2) {
+    flex-direction: row-reverse;
+}
+
+.video_et_descr div {
+    width: 50%;
+}
+
+.notre_histoire h4 {
+    font-size: 2rem;
     text-align: center;
+    font-weight: 600;
+    padding: 20px;
 }
 
-.video iframe {
-    width: 70%;
-}
 
-.presse {
+/*.presse {
     display: flex;
     justify-content: space-around;
     margin: 100px auto;
@@ -1228,6 +1260,7 @@ input.commander {
 .presse img {
     width: 100%;
 }
+
 
 .logo_presse {
     display: flex;
@@ -1242,6 +1275,7 @@ input.commander {
 .logo_presse img {
     width: 100%;
 }
+*/
 
 
 /*PAGE POINT DE VENTE*/
@@ -1323,7 +1357,7 @@ input.commander {
     margin-right: 20px;
     width: 15%;
     min-width: 215px;
-    top: 100px;
+    top: 150px;
     position: fixed;
     left: 0px;
     bottom: 0px;
@@ -1413,9 +1447,14 @@ input.commander {
     margin: 20px;
 }
 
-.card {
-    min-width: 270px!important;
-    min-height: 340px!important;
+.menu_droit .card {}
+
+.card img {
+    width: 100%;
+}
+
+.menu_droit .card-title {
+    font-size: 20px!important;
 }
 
 .prix {
@@ -1604,6 +1643,21 @@ input.commander {
         box-sizing: border-box;
         text-align: center;
     }
+    /*notre histoire*/
+    .a_propos {
+        display: flex;
+        flex-direction: column;
+    }
+    .a_propos>div {
+        width: 90%;
+    }
+    .descr_a_propos {
+        padding-top: 50px;
+        margin-left: 0;
+    }
+    .descr_a_propos p {
+        text-align: center;
+    }
 }
 
 @media screen and (max-width:1024px) {
@@ -1672,8 +1726,17 @@ input.commander {
         width: 100%;
     }
     .logo {
-        width: 100%;
-        margin: 0 25%;
+        width: 70%;
+    }
+    .navbar-toggler {
+        width: 15%;
+    }
+    .menu_langue {
+        width: 15%;
+    }
+    /*footer*/
+    .news form {
+        width: 90%;
     }
     /*index*/
     .carousel-caption {
@@ -1849,6 +1912,21 @@ input.commander {
     .news {
         width: 100%;
     }
+    .news .input1 {
+        width: 90%!important;
+        margin: 5px auto 10px;
+        text-align: center;
+    }
+    .news .input-submit {
+        margin: 10px auto;
+    }
+    .news form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+        text-align: center;
+    }
     /*footer - liens*/
     #liens {
         flex-direction: column;
@@ -1944,6 +2022,9 @@ input.commander {
 }
 
 @media screen and (max-width:550px) {
+    form {
+        min-width: 0px;
+    }
     /*header*/
     nav {
         width: 100%;
@@ -1952,9 +2033,6 @@ input.commander {
     div.navbar {
         width: 100%;
         margin: auto;
-    }
-    .logo {
-        margin: 0 15%;
     }
     /*reservation*/
     #bg-reservation {
