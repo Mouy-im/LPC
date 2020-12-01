@@ -52,6 +52,10 @@ table {
     font-size: 1.5em;
 }
 
+li a {
+    font-size: 1.3em;
+}
+
 p {
     text-align: justify;
 }
@@ -273,7 +277,7 @@ div.logo {
     margin: 0px 10px;
 }
 
-#menuconnect_panier i {
+#menuconnect_panier i.fa-search {
     font-size: 1.5em!important;
 }
 
@@ -1446,8 +1450,6 @@ input.commander {
 #pret-a-porter {
     margin: 20px;
 }
-
-.menu_droit .card {}
 
 .card img {
     width: 100%;
