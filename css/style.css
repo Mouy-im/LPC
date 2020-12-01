@@ -391,6 +391,10 @@ input.form-control:focus {
     height: 530px;
 }
 
+.nav-item_ul li {
+    font-size: 1rem;
+}
+
 .nav-item_ul>li {
     line-height: 1.5em;
 }
