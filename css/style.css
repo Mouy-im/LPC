@@ -64,6 +64,11 @@
     .carousel-control-next-icon.grey {
         background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='ddd' width='8' height='8' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5L3.75 4l-2.5 2.5L2.75 8l4-4-4-4z'/%3e%3c/svg%3e")!important;
     }
+    
+    .card {
+        background-color: whitesmoke;
+        padding: 0!important;
+    }
     /*FORMULAIRE*/
     
     .input1 {
@@ -128,6 +133,7 @@
     
     select {
         border: 2px solid black;
+        background-color: transparent;
     }
     
     form {
@@ -178,7 +184,7 @@
     }
     
     nav.navbar {
-        background-color: rgba(255, 255, 255);
+        background-color: rgb(255, 255, 255);
         margin: 0px;
         padding: 0px;
     }
@@ -302,8 +308,7 @@
     .menu_principal {
         width: 100%;
         display: flex;
-        background-color: /*rgba(255, 255, 255, 0.5)*/
-        transparent;
+        background-color: transparent;
         margin: 0px;
         padding: 0px;
         border-top: 1px solid grey;
@@ -360,9 +365,6 @@
     .nav-item ul {
         display: none;
     }
-    /*.nav-item:hover>ul {
-    display: none;
-}*/
     
     .nav-item_ul.visible {
         display: block;
@@ -449,36 +451,30 @@
     .main_index .carousel-caption {
         background-color: rgba(255, 255, 255, 0.6)!important;
         border-radius: 200px 5px;
-        height: 50%;
-        bottom: 15%!important;
-        margin-bottom: 0%;
-        padding: 0%!important;
+        height: 40%;
+        bottom: 15%;
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-around;
+        box-sizing: content-box;
     }
     
     .main_index .carousel-caption h1 {
         font-size: 2.5em!important;
         line-height: 1.5em;
-        height: 50%;
-        padding-top: 10%;
     }
     
     .main_index .carousel-caption h2 {
         line-height: 1.5em;
         font-size: 2.5em!important;
-        height: 20%;
-        font-weight: 600;
-        padding-top: 2%;
+        padding: 0px;
     }
     
     .btn_link {
-        padding-bottom: 20px;
-        width: 30%;
-        padding: 20px;
-        margin: 5%;
+        width: 40%;
+        padding: 10px;
+        margin: 0px auto;
         border-radius: 5px;
         background-color: #7de7d6;
         border: 1px solid rgb(204, 204, 204);
@@ -489,6 +485,10 @@
         transition-property: background-color, color;
         transition-duration: 0.8s;
         text-decoration: none!important;
+    }
+    
+    .main_index .carousel-item:nth-of-type(2) .btn_link {
+        display: inline;
     }
     
     .main_index .carousel-item:nth-of-type(2) .btn_link:nth-of-type(1) {
@@ -547,7 +547,6 @@
         text-align: center;
         width: 100%;
         z-index: 1;
-        /*font-size: 150%;*/
         text-decoration: none!important;
         transition-property: all;
         transition-duration: 0.8s;
@@ -564,7 +563,6 @@
         text-align: center;
         width: 70%;
         z-index: 1;
-        /*font-size: 100%;*/
         text-decoration: none!important;
         transition-property: all;
         transition-duration: 1s;
@@ -726,7 +724,6 @@
     #liens li a {
         line-height: 1.5em;
         text-decoration: none!important;
-        /*font-size: 1.5em;*/
     }
     /*FOOTER ARTICLE BAS DE PAGE*/
     
@@ -820,7 +817,7 @@
     
     #bg-reservation {
         width: 100%;
-        background: url(../images/relooking_il.jpg)no-repeat center;
+        background: url(/images/relooking_il.jpg)no-repeat center;
         background-size: cover;
         padding: 50px;
     }
@@ -831,6 +828,10 @@
         margin: 0px auto;
         padding-top: 10px;
         background-color: rgba(255, 255, 255, 0.5);
+    }
+    
+    .form-reservation h2 {
+        font-family: overlock sans-serif;
     }
     
     .entete-reservation {
@@ -958,7 +959,6 @@
     }
     
     .pds_main {
-        /* font-size: 150%;*/
         font-weight: 600;
         margin-bottom: 20px;
     }
@@ -1024,7 +1024,6 @@
     .accordion button {
         color: black;
         padding: 10px;
-        /*font-size: 1em;*/
     }
     
     .accordion button:hover {
@@ -1385,7 +1384,7 @@
         text-align: center;
         width: 100%;
         z-index: 1;
-        /*font-size: 150%;*/
+        font-size: 1.5em;
         text-decoration: none!important;
         transition-property: all;
         transition-duration: 0.8s;
@@ -1416,13 +1415,8 @@
         width: 100%;
     }
     
-    .menu_droit .card-title {
-        /*font-size: 20px!important;*/
-    }
-    
     .prix {
         font-weight: 600;
-        /*font-size: 1.5em;*/
     }
     /*Page description produit*/
     
@@ -1537,11 +1531,6 @@
         display: none;
     }
     
-    .titre_detail span,
-    .titre_detail.visible span {
-        /* font-size: 1.5em;*/
-    }
-    
     .detail {
         font-weight: 400;
         text-align: justify;
@@ -1559,31 +1548,13 @@
     /********************************************/
     /***************RESPONSIVE*******************/
     
-    @media screen and (max-width:1561px) {
+    @media screen and (max-width:1493px) {
         /*index*/
         .main_index .carousel-caption h1,
         .main_index .carousel-caption h2 {
-            font-size: 2.5em;
+            font-size: 2em!important;
             line-height: 1.5em;
-            padding-top: 5%;
         }
-        .main_index .btn_link {
-            width: 50%;
-            margin-bottom: 5%;
-            padding: 7px;
-        }
-        .main_index .carousel-item:nth-of-type(2) .btn_link:nth-of-type(1) {
-            padding: 5px;
-            margin-bottom: 0px;
-            margin-top: 0px;
-        }
-        .main_index .carousel-item:nth-of-type(2) .btn_link:nth-of-type(2) {
-            padding: 5px;
-            margin-top: 0px;
-        }
-    }
-    
-    @media screen and (max-width:1493px) {
         /*PRODUIT - FEMME*/
         .rows4 div {
             width: 40%
@@ -1599,9 +1570,13 @@
             width: 80%;
         }
         /*index*/
-        .carousel-caption h1,
-        .carousel-caption h2 {
-            font-size: 2em;
+        .main_index .carousel-caption h1,
+        .main_index .carousel-caption h2 {
+            font-size: 1.5em!important;
+        }
+        .main_index .btn_link {
+            width: 50%;
+            padding: 5px;
         }
         /*panier*/
         .panier_droit {
@@ -1660,19 +1635,6 @@
         /*INDEX*/
         .rows3 div {
             margin: 10px;
-        }
-        .main_index .carousel-caption {
-            height: 60%;
-        }
-        .carousel-caption h1,
-        .carousel-caption h2 {
-            font-size: 1.5em!important;
-            padding-bottom: 5%;
-        }
-        .main_index .btn_link {
-            width: 50%;
-            padding: 5px;
-            margin-bottom: 3%;
         }
         /*footer - information*/
         #information {
@@ -1765,15 +1727,13 @@
             width: 90%;
         }
         /*index*/
-        .carousel-caption h1,
-        .carousel-caption h2 {
-            font-size: 0.5em!important;
-            padding-bottom: 5%;
+        .main_index .carousel-caption h1,
+        .main_index .carousel-caption h2 {
+            font-size: 1.2em!important;
         }
         .main_index .btn_link {
-            width: 40%;
-            font-size: 1.2em!important;
-            margin-bottom: 3%;
+            font-size: 0.8em!important;
+            padding: 5px;
         }
         .actus .rows3 {
             flex-wrap: wrap;
@@ -1863,7 +1823,6 @@
         }
         .div_descr_panier {
             width: 20%;
-            /*font-size: 0.7em;*/
             min-width: 240px;
         }
         .div_prix_panier {
@@ -1914,28 +1873,19 @@
             top: 70px;
         }
         /*Index*/
+        .main_index .carousel-caption {
+            border-radius: 100px 15px;
+            bottom: 20%;
+            width: 75%;
+        }
         .main_index .carousel-caption h1,
         .main_index .carousel-caption h2 {
-            font-size: 1.2em!important;
-            padding-left: 25%;
-            height: 20%;
-            padding-top: 10px;
+            padding-top: 0px;
         }
         .main_index .btn_link {
+            font-size: 0.7em!important;
+            padding: 5px;
             width: 60%;
-            font-size: 1em!important;
-            margin-right: 20%;
-        }
-        .main_index .carousel-item:nth-of-type(1) .btn_link,
-        .main_index .carousel-item:nth-of-type(3) .btn-link {
-            margin-bottom: 3%;
-        }
-        .main_index .carousel-item:nth-of-type(3) h2 {
-            font-size: 1.1em;
-        }
-        .btn_link {
-            display: inline-block;
-            width: 80%;
         }
         .actus .rows3 div {
             width: 60%;
@@ -2122,6 +2072,27 @@
         .menu_langue {
             width: 15%;
         }
+        /*Index*/
+        .main_index .carousel-caption {
+            border-radius: 50px 15px;
+            justify-content: space-between;
+            height: 55%;
+            padding: 10px;
+        }
+        .main_index .carousel-caption h1 {
+            padding-top: 10px;
+        }
+        .main_index .carousel-caption h1,
+        .main_index .carousel-caption h2 {
+            line-height: 1em;
+            font-size: 1em!important;
+            bottom: 5%!important;
+        }
+        .main_index .btn_link {
+            font-size: 0.7em!important;
+            width: 80%;
+            padding: 2px;
+        }
         /*moncompte*/
         .connexion-form {
             width: 70%;
@@ -2146,7 +2117,6 @@
         }
         .form-reservation h2 {
             font-size: 1em;
-            font-family: overlock sans-serif;
         }
         .entete-reservation {
             width: 100%;
@@ -2162,6 +2132,7 @@
     }
     
     @media screen and (max-width:400px) {
+        /*header*/
         .logo {
             width: 60%;
         }
@@ -2170,5 +2141,9 @@
         }
         .menu_langue {
             width: 20%;
+        }
+        /*index*/
+        .main_index .carousel-caption {
+            bottom: 30%!important;
         }
     }

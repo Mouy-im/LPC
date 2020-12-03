@@ -40,10 +40,6 @@ $(function() {
         });
 
 
-
-
-
-
         const retour = document.querySelector('#basdepage .retour-haut');
         window.onscroll = function() {
             if (document.documentElement.scrollTop > 150 || (window.innerWidth <= 500 && document.documentElement.scrollTop > 0)) {
