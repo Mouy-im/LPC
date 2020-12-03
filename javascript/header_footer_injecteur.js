@@ -5,12 +5,23 @@ $(function() {
             $('.div_search').toggle('slow');
         });
 
-        $(document).on('click', '.nav-item', function() {
+        /*$(document).on('click', '.nav-item', function() {
             $(this).children().toggle('slow');
+        });*/
 
+        $(document).on('click', '.user', function() {
+            $('.user_ul').toggle('slow');
+        });
+
+
+        $(document).on('click', '.nav-item', function() {
+
+            $(this).children().slideToggle('slow').addClass('visible');
         });
 
     });
+
+
 
 
 
@@ -24,16 +35,14 @@ $(function() {
     $(".footer_dynamic").load("/footer.html", function() {
         //index liens du footer toggle
 
-        const voir_liens = document.querySelectorAll('.voir_liens');
+        $(document).on('click', '.untiers>h3', function() {
+            $(this).siblings().slideToggle('slow');
+        });
 
-        const liens = document.querySelectorAll('.liens_info');
 
-        for (let i = 0; i < voir_liens.length; i++) {
 
-            voir_liens[i].addEventListener('click', () => {
-                liens[i].classList.toggle('isvisible');
-            });
-        }
+
+
 
         const retour = document.querySelector('#basdepage .retour-haut');
         window.onscroll = function() {
@@ -70,12 +79,6 @@ $(function() {
             }
 
         }
-
-
-
-
-
-
 
         $(document).on('click', '.fa-print', function() {
             window.print();

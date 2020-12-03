@@ -11,7 +11,8 @@ html {
 }
 
 body {
-    font-size: 1.5em!important;
+    /*font-size: 1.5em!important;*/
+    font-size: clamp(23px, 1em, 1.5em);
 }
 
 a {

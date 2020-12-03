@@ -57,7 +57,7 @@ function chargeArticle(article) {
         $('.entretien').append('<p>' + article.entretien + '</p>');
         $('.titre_detail p').css('display', 'none');
         $(document).on('click', '.titre_detail.description', function() {
-            $('.description p').toggle(600);
+            $('.description p').slideToggle(600);
             if ($('.description span').text() == '+ ')
                 $('.description span').text('- ');
             else
@@ -65,7 +65,7 @@ function chargeArticle(article) {
 
         });
         $(document).on('click', '.titre_detail.entretien', function() {
-            $('.entretien p').toggle(600);
+            $('.entretien p').slideToggle(600);
             if ($('.entretien span').text() == '+ ')
                 $('.entretien span').text('- ');
             else
