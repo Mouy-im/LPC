@@ -1,4 +1,5 @@
-function Article(categorie, images, titre, ref, prix, taille, description, entretien, url) {
+function Article(variete, categorie, images, titre, ref, prix, taille, description, entretien, url) {
+    this.variete = variete;
     this.categorie = categorie;
     this.images = images;
     this.titre = titre;
@@ -9,10 +10,10 @@ function Article(categorie, images, titre, ref, prix, taille, description, entre
     this.entretien = entretien;
     this.url = url;
     this.affichage = function() {
-        let carte_article = '<div class="col-12 col-md-6 col-xl-4">' +
+        let carte_article = '<div class="col-6 col-xl-4">' +
             '<div class="card my-3 border-grey shadow">' +
             '<a class="stretched-link" href="' + this.url + '"><img class="card-img-top" src="' + this.images[0] + '"alt="' + this.titre + this.categorie + 'homme"></a>' +
-            '<div class="card-body">' +
+            '<div class="carte-article card-body">' +
             '<h4 class="card-title">' + this.titre + '</h4>' +
             '<span class="prix">' + this.prix + '</span>' +
             '</div>' +

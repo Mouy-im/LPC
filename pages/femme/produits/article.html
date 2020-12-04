@@ -31,8 +31,15 @@
     </aside>
     <div class="img_descr_produit">
         <div class="carousel slide carousel_img_produit" data-ride="carousel">
-            <!--<div class="arborescence_lien"><a href="/index.html">Accueil</a> > <a href="/pages/femme/femme_categories.html">Femme</a> > <a href="/pages/femme/femme_produits.html">Prêt à porter</a> > <a href="/pages/femme/femme_produits.html?#jean_pantalon">Pantalons-Jeans</a> > Jean 712 SLIM
-                        - LEVI'S</div>-->
+            <!--<nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a id="accueil" href="/index.html">Accueil</a></li>
+                    <li class="breadcrumb-item"><a id="femme" href="/pages/femme/femme_categories.html">Femme</a></li>
+                    <li class="breadcrumb-item"><a id="pap_access" href="#">xxx</a></li>
+                    <li class="breadcrumb-item"><a id="categorie" href="#">xxx</a></li>
+                    <li class="breadcrumb-item active" id="current" aria-current="page">xxx</li>
+                </ol>
+            </nav>-->
             <div class="carousel-inner">
 
                 <a class="carousel-control-prev" href=".carousel_img_produit" role="button" data-slide="prev">
@@ -62,7 +69,7 @@
                 <a href="/images/tailles/guide_taille_femme.png" target="_blank">Guide des tailles</a>
                 <hr>
 
-                <input class="input-submit" type="button" value="Ajouter au panier">
+                <input id="btn_ajout_panier" class="input-submit" type="button" value="Ajouter au panier">
             </form>
             <ul class="listes_description">
                 <li class="titre_detail description"><span>+ </span>Description détaillée
@@ -80,30 +87,30 @@
         <h2>Nos suggestions</h2>
     </div>
     <div class="row row_suggestion">
-        <div class="col col-md-4">
+        <div class="col-6 col-xl-4">
             <div class="card my-3 border-grey shadow">
                 <a class="stretched-link" href="/pages/femme/produits/pull1.html"><img class="card-img-top" src="/images/femme/pret-a-porter/pull-gilet/pull1/pull1_main.jpg" alt="Pull jacquard col rond gris"></a>
-                <div class="card-body">
+                <div class="carte-article card-body">
                     <h4 class="card-title">Pull col montant</h4>
-                    <span class="prix">45€99</span>
+                    <span class="prix">45<sup>€99</sup></span>
                 </div>
             </div>
         </div>
-        <div class="col col-md-4">
+        <div class="col-6 col-xl-4">
             <div class="card my-3 border-grey shadow">
                 <a class="stretched-link" href="/pages/femme/produits/jean2.html"><img class="card-img-top" src="/images/femme/pret-a-porter/jean-pantalon/jean2/jean2_main.jpg" alt="Jean push up"></a>
-                <div class="card-body">
+                <div class="carte-article card-body">
                     <h4 class="card-title">Jean push up</h4>
-                    <span class="prix">49€99</span>
+                    <span class="prix">49<sup>€99</sup></span>
                 </div>
             </div>
         </div>
-        <div class="col col-md-4">
+        <div class="col-6 col-xl-4">
             <div class="card my-3 border-grey shadow">
                 <a class="stretched-link" href="/pages/femme/produits/chaussures1.html"><img class="card-img-top" src="/images/femme/accessoires/chaussures/chaussures1/chaussures1_main.jpg" alt="Boots chelsea"></a>
-                <div class="card-body">
+                <div class="carte-article card-body">
                     <h4 class="card-title">Boots chelsea</h4>
-                    <span class="prix">79€99</span>
+                    <span class="prix">79<sup>€99</sup></span>
                 </div>
             </div>
         </div>

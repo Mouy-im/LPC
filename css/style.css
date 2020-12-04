@@ -69,6 +69,22 @@
         background-color: whitesmoke;
         padding: 0!important;
     }
+    /*carte produit*/
+    
+    .carte-article.card-body {
+        text-align: center;
+        padding: 5px;
+    }
+    
+    .carte-article h3,
+    .carte-article h4 {
+        font-size: 1em;
+        margin-bottom: 0px;
+    }
+    
+    .carte-article .prix {
+        font-size: 1em;
+    }
     /*FORMULAIRE*/
     
     .input1 {
@@ -427,13 +443,15 @@
     .user_ul {
         display: none;
         width: 250px;
-        height: 110px;
+        height: 100px;
         background-color: whitesmoke;
         padding: 5px;
         position: absolute;
         right: 10px;
-        top: 50px;
+        top: 44px;
         text-align: left!important;
+        border-radius: 15px;
+        box-shadow: 1px 1px 15px 1px grey;
     }
     
     .user_ul li a {
@@ -451,8 +469,8 @@
     .main_index .carousel-caption {
         background-color: rgba(255, 255, 255, 0.6)!important;
         border-radius: 200px 5px;
-        height: 40%;
-        bottom: 15%;
+        /*height: 40%;*/
+        bottom: 25%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -463,6 +481,7 @@
     .main_index .carousel-caption h1 {
         font-size: 2.5em!important;
         line-height: 1.5em;
+        padding-top: 0;
     }
     
     .main_index .carousel-caption h2 {
@@ -750,7 +769,7 @@
     #basdepage .retour_scroll {
         position: fixed;
         right: 0%;
-        bottom: 0%;
+        bottom: 5%;
         z-index: 1;
         width: 50px;
     }
@@ -1039,6 +1058,11 @@
     
     .panier {
         display: flex;
+    }
+    
+    .panier h2 {
+        font-family: overlock sans-serif;
+        font-size: 1.5rem;
     }
     /***Partie gauche panier***/
     
@@ -1431,9 +1455,8 @@
         display: flex;
     }
     
-    .arborescence_lien {
-        margin: 10px 10px;
-        text-align: left;
+    .breadcrumb {
+        background-color: white;
     }
     
     .carousel_img_produit {
@@ -1538,13 +1561,16 @@
     
     .suggestion {
         width: 80%;
-        margin-left: 20%;
+        margin-left: 19%;
         margin-top: 2%;
     }
     
     .row_suggestion {
-        flex-wrap: nowrap!important;
+        justify-content: center;
     }
+    /*.row_suggestion {
+        flex-wrap: nowrap!important;
+    }*/
     /********************************************/
     /***************RESPONSIVE*******************/
     
@@ -1668,7 +1694,7 @@
             width: 50%;
         }
         .suggestion {
-            width: 100%;
+            /*width: 100%;*/
             margin: auto;
         }
     }
@@ -1742,9 +1768,6 @@
             width: 40%;
         }
         /*avis*/
-        .pages_avis p {
-            width: 90%;
-        }
         .avis {
             flex-direction: column;
         }
@@ -1783,14 +1806,6 @@
         }
         #horaire div {
             width: 100%;
-        }
-        /*page produit*/
-        .row_suggestion {
-            justify-content: center;
-        }
-        .row_suggestion div {
-            width: 100%;
-            margin: auto;
         }
         /*panier*/
         .panier {
@@ -1834,6 +1849,11 @@
     }
     
     @media screen and (max-width:768px) {
+        /*carte-article*/
+        .carte-article h3,
+        .carte-article h4 {
+            font-size: 0.8em;
+        }
         /*header*/
         .navbar {
             position: static;
@@ -1869,7 +1889,7 @@
             margin: 10px 0px;
         }
         .user_ul {
-            right: 45px;
+            right: 40px;
             top: 70px;
         }
         /*Index*/
@@ -1988,6 +2008,10 @@
         .entete-reservation {
             width: 100%;
         }
+        /*avis*/
+        .pages_avis>p {
+            width: 90%;
+        }
         /*Pages catégories*/
         .rows4 div span {
             font-size: 1.2em;
@@ -2013,15 +2037,20 @@
             margin: 0px auto;
             text-align: center;
         }
-        .row_suggestion {
-            flex-direction: column;
-        }
-        .row_suggestion div {
-            width: 80%;
-            margin-bottom: 20px;
-        }
         .rows4 span {
             font-size: 0.9em!important;
+        }
+        #btn_ajout_panier {
+            position: fixed;
+            bottom: 0px;
+            left: 0px;
+            width: 100%;
+            padding: 10px;
+            z-index: 1;
+            box-sizing: content-box;
+            margin: 0;
+            border-radius: 0px;
+            ;
         }
         /*panier*/
         .div_descr_panier {
@@ -2075,8 +2104,8 @@
         /*Index*/
         .main_index .carousel-caption {
             border-radius: 50px 15px;
-            justify-content: space-between;
-            height: 55%;
+            /*justify-content: space-between;
+            height: 55%;*/
             padding: 10px;
         }
         .main_index .carousel-caption h1 {
@@ -2084,7 +2113,7 @@
         }
         .main_index .carousel-caption h1,
         .main_index .carousel-caption h2 {
-            line-height: 1em;
+            line-height: 1.3em;
             font-size: 1em!important;
             bottom: 5%!important;
         }
