@@ -1,4 +1,5 @@
-function Article(categorie, images, titre, ref, prix, taille, description, entretien, url) {
+function Article(variete, categorie, images, titre, ref, prix, taille, description, entretien, url) {
+    this.variete = variete;
     this.categorie = categorie;
     this.images = images;
     this.titre = titre;
@@ -9,11 +10,13 @@ function Article(categorie, images, titre, ref, prix, taille, description, entre
     this.entretien = entretien;
     this.url = url;
     this.affichage = function() {
-        let carte_article = '<div class="card my-3 border-grey shadow">' +
-            '<a class="stretched-link" href="' + this.url + '"><img class="card-img-top" src="' + this.images[0] + '"></a>' +
-            '<div class="card-body">' +
-            '<h5 class="card-title">' + this.titre +
-            '<strong class="pull-right">' + this.prix + '</strong></h5>' +
+        let carte_article = '<div class="col-6 col-xl-4">' +
+            '<div class="card my-3 border-grey shadow">' +
+            '<a class="stretched-link" href="' + this.url + '"><img class="card-img-top" src="' + this.images[0] + '"alt="' + this.titre + this.categorie + 'homme"></a>' +
+            '<div class="carte-article card-body">' +
+            '<h4 class="card-title">' + this.titre + '</h4>' +
+            '<span class="prix">' + this.prix + '</span>' +
+            '</div>' +
             '</div>' +
             '</div>';
         return carte_article;
@@ -29,8 +32,15 @@ function chargeArticle(article) {
     //affichage du produit en dynamic dans la page article
     $("main").load("/pages/femme/produits/article.html", function() {
 
-        //carousel image
 
+        /*breadcrumb
+        $('#pap_access').html(article.variete);
+        $('#pap_access').attr('href', '');
+        $('#categorie').html(article.categorie);
+   
+        $('#current').html(article.titre[5]);*/
+
+        //carousel image
         for (let i = 0; i < article.images.length; i++) {
             let image_produit = $('<div class="carousel-item image_produit"></div>')
             $('.carousel-inner').prepend(image_produit);
