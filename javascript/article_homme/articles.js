@@ -27,7 +27,7 @@ let jean1 = new Article(
     'jean', ['/images/homme/pret-a-porter/jeans/jean1/jean1_main.jpg', '/images/homme/pret-a-porter/jeans/jean1/jean1_1.jpg', '/images/homme/pret-a-porter/jeans/jean1/jean1_2.jpg', '/images/homme/pret-a-porter/jeans/jean1/jean1_3.jpg'],
     'Jean coupe slim',
     'Référence 2274097 / GHG906',
-    '59<sup><sup>€99</sup></sup>', [t36, t38, t40, t42, t44, t46, t48, t50, t52, t54],
+    '59<sup>€99</sup>', [t36, t38, t40, t42, t44, t46, t48, t50, t52, t54],
     'Jean droit taille haute en coton denim extensible. Ouverture par un zip et bouton, denim délavé. 2 poches cavalières devant et 2 poches plaquées au dos. Passants pour ceinture, ceinture ton sur ton à nouer sur la taille. Surpiqûres ton sur ton. Idéal pour un mix de styles',
     'Matière principale : 99% coton, 1% élasthanne</br>Secondaire : 100% coton<br>Température de repassage moyenne / blanchiment interdit',
     '/pages/homme/produits/jean1.html');
@@ -45,7 +45,7 @@ let jean2 = new Article(
 let jean3 = new Article(
     'prêt-à-porter',
     'jean', ['/images/homme/pret-a-porter/jeans/jean3/jean3_main.jpg', '/images/homme/pret-a-porter/jeans/jean3/jean3_1.jpg', '/images/homme/pret-a-porter/jeans/jean3/jean3_2.jpg', '/images/homme/pret-a-porter/jeans/jean3/jean3_3.jpg', '/images/homme/pret-a-porter/jeans/jean3/jean3_4.jpg'],
-    'Jean regular en Coolmax',
+    'Jean en Coolmax',
     'Référence 2273214 / GHD914',
     '49<sup>€99</sup>', [t36, t38, t40, t42, t44, t46, t48, t50, t52, t54],
     'Le denim coolmax allie confort et performance. Il est composé d’une matière moderne qui évacue l’humidité corporelle grâce à sa fibre respirante qui rend le port du jean encore plus attrayant. La matière est très légère et offre la sensation de porter un vrai denim en coton avec un confort exceptionnel.',
@@ -57,7 +57,7 @@ let jean3 = new Article(
 let chemise1 = new Article(
     'prêt-à-porter',
     'chemise', ['/images/homme/pret-a-porter/chemises/chemise1/chemise1_main.jpg', '/images/homme/pret-a-porter/chemises/chemise1/chemise1_1.jpg', '/images/homme/pret-a-porter/chemises/chemise1/chemise1_2.jpg', '/images/homme/pret-a-porter/chemises/chemise1/chemise1_3.jpg', '/images/homme/pret-a-porter/chemises/chemise1/chemise1_4.jpg'],
-    'Chemise col américain ciel',
+    'Chemise ciel',
     'Référence 2355705 / GHR867',
     '39<sup>€99</sup>', [t36, t38, t40, t42, t44, t46, t48, t50, t52, t54],
     'Manches longues<br>Coupe droite<br>Col classique<br>Pointes du col boutonnées',
@@ -88,7 +88,7 @@ let chemise3 = new Article(
 let manteau1 = new Article(
     'prêt-à-porter',
     'manteau', ['/images/homme/pret-a-porter/manteaux/manteau1/manteau1_main.jpg', '/images/homme/pret-a-porter/manteaux/manteau1/manteau1_1.jpg', '/images/homme/pret-a-porter/manteaux/manteau1/manteau1_2.jpg', '/images/homme/pret-a-porter/manteaux/manteau1/manteau1_3.jpg'],
-    'Doudoune chaude Verveine',
+    'Doudoune Verveine',
     'Référence 2355705 / GHR867',
     '109<sup>€00</sup>', [t36, t38, t40, t42, t44, t46, t48, t50, t52, t54],
     'Longueur : court<br>Col montant<br>Fermeture zippée<br>Avec capuche',
@@ -98,7 +98,7 @@ let manteau1 = new Article(
 let manteau2 = new Article(
     'prêt-à-porter',
     'manteau', ['/images/homme/pret-a-porter/manteaux/manteau2/manteau2_main.jpg', '/images/homme/pret-a-porter/manteaux/manteau2/manteau2_1.jpg', '/images/homme/pret-a-porter/manteaux/manteau2/manteau2_2.jpg', '/images/homme/pret-a-porter/manteaux/manteau2/manteau2_3.jpg', '/images/homme/pret-a-porter/manteaux/manteau2/manteau2_4.jpg'],
-    'Caban en drap de laine',
+    'Caban en laine',
     'Référence 2302717 / GBB430',
     '129<sup>€99</sup>', [t36, t38, t40, t42, t44, t46, t48, t50, t52, t54],
     'Longueur : court<br>Col tailleur<br>Fermeture boutonnée',
@@ -108,7 +108,7 @@ let manteau2 = new Article(
 let manteau3 = new Article(
     'prêt-à-porter',
     'manteau', ['/images/homme/pret-a-porter/manteaux/manteau3/manteau3_main.jpg', '/images/homme/pret-a-porter/manteaux/manteau3/manteau3_1.jpg', '/images/homme/pret-a-porter/manteaux/manteau3/manteau3_2.jpg', '/images/homme/pret-a-porter/manteaux/manteau3/manteau3_3.jpg'],
-    'Parka chaude à capuche Sky',
+    'Parka à capuche',
     'Référence 2302717 / GBB430',
     '79<sup>€99</sup>', [t36, t38, t40, t42, t44, t46, t48, t50, t52, t54],
     'Longueur : mi-long<br> Col montant<br>Fermeture zippée',
@@ -119,7 +119,7 @@ let manteau3 = new Article(
 let polo1 = new Article(
     'prêt-à-porter',
     'polo', ['/images/homme/pret-a-porter/polos/polo1/polo1_main.jpg', '/images/homme/pret-a-porter/polos/polo1/polo1_1.jpg', '/images/homme/pret-a-porter/polos/polo1/polo1_2.jpg', '/images/homme/pret-a-porter/polos/polo1/polo1_3.jpg', '/images/homme/pret-a-porter/polos/polo1/polo1_4.jpg'],
-    'Polo manches courtes marine',
+    'Polo marine',
     'Référence 2302717 / GBB430',
     '19<sup>€99</sup>', [ts, tm, tl, txl, t2xl, t3xl],
     'Manches courtes<br>Coupe droite<br>Col polo, chemise',
@@ -129,7 +129,7 @@ let polo1 = new Article(
 let polo2 = new Article(
     'prêt-à-porter',
     'polo', ['/images/homme/pret-a-porter/polos/polo2/polo2_main.jpg', '/images/homme/pret-a-porter/polos/polo2/polo2_1.jpg', '/images/homme/pret-a-porter/polos/polo2/polo2_2.jpg'],
-    'Polo manches longues marine',
+    'Polo marine',
     'Référence 2302717 / GBB430',
     '19<sup>€99</sup>', [ts, tm, tl, txl, t2xl, t3xl],
     'Manches longues<br>Coupe droite<br>Col polo, chemise',
@@ -139,7 +139,7 @@ let polo2 = new Article(
 let polo3 = new Article(
     'prêt-à-porter',
     'polo', ['/images/homme/pret-a-porter/polos/polo3/polo3_main.jpg', '/images/homme/pret-a-porter/polos/polo3/polo3_1.jpg', '/images/homme/pret-a-porter/polos/polo3/polo3_2.jpg', '/images/homme/pret-a-porter/polos/polo3/polo3_3.jpg', '/images/homme/pret-a-porter/polos/polo3/polo3_4.jpg'],
-    'Polo slim maille piquée ',
+    'Polo maille piquée ',
     'Référence 2302717 / GBB430',
     '24<sup>€99</sup>', [ts, tm, tl, txl, t2xl, t3xl],
     'Manches courtes<br>Coupe droite<br>Col polo, chemise',
@@ -151,7 +151,7 @@ let polo3 = new Article(
 let pull1 = new Article(
     'prêt-à-porter',
     'pull', ['/images/homme/pret-a-porter/pulls/pull1/pull1_main.jpg', '/images/homme/pret-a-porter/pulls/pull1/pull1_1.jpg', '/images/homme/pret-a-porter/pulls/pull1/pull1_2.jpg', '/images/homme/pret-a-porter/pulls/pull1/pull1_3.jpg'],
-    'Pull col montant maille cotelée',
+    'Pull maille cotelée',
     'Référence 2302717 / GBB430',
     '29<sup>€99</sup>', [ts, tm, tl, txl, t2xl, t3xl],
     'Manches longues<br>Col montant<br>Fine maille',
@@ -161,7 +161,7 @@ let pull1 = new Article(
 let pull2 = new Article(
     'prêt-à-porter',
     'pull', ['/images/homme/pret-a-porter/pulls/pull2/pull2_main.jpg', '/images/homme/pret-a-porter/pulls/pull2/pull2_1.jpg', '/images/homme/pret-a-porter/pulls/pull2/pull2_2.jpg', '/images/homme/pret-a-porter/pulls/pull2/pull2_3.jpg', '/images/homme/pret-a-porter/pulls/pull2/pull2_4.jpg'],
-    'Pull col v en coton',
+    'Pull en coton',
     'Référence 2302717 / GBB430',
     '29<sup>€99</sup>', [ts, tm, tl, txl, t2xl, t3xl],
     'Manches longues<br>Col V<br>Fine maille',
@@ -213,7 +213,7 @@ let sweat3 = new Article(
 let tshirt1 = new Article(
     'prêt-à-porter',
     'tshirt', ['/images/homme/pret-a-porter/tshirts/tshirt1/tshirt1_main.jpg', '/images/homme/pret-a-porter/tshirts/tshirt1/tshirt1_1.jpg', '/images/homme/pret-a-porter/tshirts/tshirt1/tshirt1_2.jpg', '/images/homme/pret-a-porter/tshirts/tshirt1/tshirt1_3.jpg', '/images/homme/pret-a-porter/tshirts/tshirt1/tshirt1_4.jpg'],
-    'T-shirt imprimé devant marron',
+    'T-shirt imprimé marron',
     'Référence 2302717 / GBB430',
     '14<sup>€99</sup>', [ts, tm, tl, txl, t2xl, t3xl],
     'Manches courtes<br>Coupe droite<br>Col rond',
@@ -233,7 +233,7 @@ let tshirt2 = new Article(
 let tshirt3 = new Article(
     'prêt-à-porter',
     'tshirt', ['/images/homme/pret-a-porter/tshirts/tshirt3/tshirt3_main.jpg', '/images/homme/pret-a-porter/tshirts/tshirt3/tshirt3_1.jpg', '/images/homme/pret-a-porter/tshirts/tshirt3/tshirt3_2.jpg', '/images/homme/pret-a-porter/tshirts/tshirt3/tshirt3_3.jpg', '/images/homme/pret-a-porter/tshirts/tshirt3/tshirt3_4.jpg'],
-    'T-shirt col rond gris',
+    'T-shirt gris',
     'Référence 2302717 / GBB430',
     '19<sup>€99</sup>', [ts, tm, tl, txl, t2xl, t3xl],
     'Manches courtes<br>Col rond',
@@ -247,7 +247,7 @@ let tshirt3 = new Article(
 let chaussures1 = new Article(
     'prêt-à-porter',
     'chaussure', ['/images/homme/accessoires/chaussures/chaussures1/chaussures1_main.jpg', '/images/homme/accessoires/chaussures/chaussures1/chaussures1_1.jpg', '/images/homme/accessoires/chaussures/chaussures1/chaussures1_2.jpg', '/images/homme/accessoires/chaussures/chaussures1/chaussures1_3.jpg', '/images/homme/accessoires/chaussures/chaussures1/chaussures1_4.jpg'],
-    'Chuck taylor CONVERSE',
+    'Chuck taylor',
     'Référence 2491390 / GHW256',
     '65<sup>€00</sup>', [t40, t41, t42, t43, t44, t45],
     'Usage sportswear<br>Talon plat<br>Talon plat<br>Hauteur de talon : 1 cm<br>Fermeture : A lacets<br>Finition lisse',
@@ -267,7 +267,7 @@ let chaussures2 = new Article(
 let chaussures3 = new Article(
     'prêt-à-porter',
     'chaussure', ['/images/homme/accessoires/chaussures/chaussures3/chaussures3_main.jpg', '/images/homme/accessoires/chaussures/chaussures3/chaussures3_1.jpg', '/images/homme/accessoires/chaussures/chaussures3/chaussures3_2.jpg', '/images/homme/accessoires/chaussures/chaussures3/chaussures3_3.jpg'],
-    'Baskets Essential Leather',
+    'Baskets Leather',
     'Référence 2491390 / GHW256',
     '99<sup>€90</sup>', [t40, t41, t42, t43, t44, t45],
     'Usage sportswear<br>Talon plat<br>Talon plat<br>Hauteur de talon : 3 cm<br>Fermeture : A lacets<br>Finition lisse',
@@ -288,7 +288,7 @@ let noeud1 = new Article(
 let noeud2 = new Article(
     'prêt-à-porter',
     'noeud', ['/images/homme/accessoires/noeuds/noeud2/noeud2_main.jpg', '/images/homme/accessoires/noeuds/noeud2/noeud2_1.jpg'],
-    'Noeud papillon dark navy',
+    'Noeud papillon navy',
     'Référence 2491390 / GHW256',
     '24<sup>€90</sup>', [tu],
     'Noeud papillon fantaisie<br>Couleurs Dark Navy',
@@ -319,7 +319,7 @@ let ceinture1 = new Article(
 let ceinture2 = new Article(
     'prêt-à-porter',
     'ceinture', ['/images/homme/accessoires/ceintures/ceinture2/ceinture2_main.jpg', '/images/homme/accessoires/ceintures/ceinture2/ceinture2_1.jpg', '/images/homme/accessoires/ceintures/ceinture2/ceinture2_2.jpg'],
-    'Ceinture tressée multicolore',
+    'Ceinture multicolore',
     'Référence 2491390 / GHW256',
     '35<sup>€00</sup>', [ts, tm, tl, txl],
     'Vous aimez allier couleur, originalité et élégance à votre style, la ceinture tressée multicolore est faite pour vous. Inspirée de nos modèles de ceintures tressées élastiques unis, cet accessoire joue avec le relief du tressage chevronné pour mettre en valeur des couleurs tendances et contemporaines.  «La Rotterdam» est une ceinture qui caractérise cette ville moderne et architecturale. Ses couleurs s\'inspirent de ses bâtiments audacieux, de leurs teintes vives et franches et de leurs formes géométriques voire cubiques. ',
@@ -329,7 +329,7 @@ let ceinture2 = new Article(
 let ceinture3 = new Article(
     'prêt-à-porter',
     'ceinture', ['/images/homme/accessoires/ceintures/ceinture3/ceinture3_main.jpg', '/images/homme/accessoires/ceintures/ceinture3/ceinture3_1.jpg', '/images/homme/accessoires/ceintures/ceinture3/ceinture3_2.jpg', '/images/homme/accessoires/ceintures/ceinture3/ceinture3_3.jpg'],
-    'Ceinture classiques cuir',
+    'Ceinture cuir',
     'Référence 2491390 / GHW256',
     '45<sup>€00</sup>', [ts, tm, tl, txl],
     'Ceinture classiques cuir surpiquée, de la marque Robert Charles.',

@@ -378,12 +378,8 @@
         color: grey;
     }
     
-    .nav-item ul {
+    .nav-item_ul {
         display: none;
-    }
-    
-    .nav-item_ul.visible {
-        display: block;
         background-color: white;
         text-align: left;
         position: absolute;
@@ -392,8 +388,8 @@
         height: 650px;
     }
     
-    .navbar-nav .nav-item:nth-of-type(5) .nav-item_ul.visible,
-    .navbar-nav .nav-item:nth-of-type(7) .nav-item_ul.visible {
+    .navbar-nav .nav-item:nth-of-type(5) .nav-item_ul,
+    .navbar-nav .nav-item:nth-of-type(7) .nav-item_ul {
         height: 250px;
     }
     
@@ -523,15 +519,28 @@
         background-color: rgb(255, 255, 255);
         color: #5f5858;
     }
-    /*Main Populaire*/
+    /*index carousel populaire et suggestion*/
     
-    article.populaire {
-        width: 95%;
-        margin: 0px auto;
+    .carousel-lg .carousel-item,
+    .carousel-md .carousel-item,
+    .carousel-sm .carousel-item {
+        text-align: center;
     }
     
-    #carousel_populaire {
-        display: flex;
+    .carousel-lg .carousel-item>div,
+    .carousel-md .carousel-item>div,
+    .carousel-sm .carousel-item>div {
+        display: inline-block;
+        margin: 0px 1%;
+    }
+    
+    .carousel-lg .card {
+        width: 25%;
+    }
+    
+    .carousel-sm,
+    .carousel-md {
+        display: none;
     }
     /* MAIN ACTUS */
     
@@ -732,8 +741,11 @@
     }
     
     #liens h3 {
-        padding-bottom: 15px;
         font-weight: 600;
+    }
+    
+    .liens_info {
+        padding-top: 20px;
     }
     
     #liens li {
@@ -1178,7 +1190,7 @@
     }
     
     .connexion form {
-        width: 80%;
+        width: 90%;
         margin: 0px auto;
         min-width: 420px;
         padding: 0px 20px;
@@ -1193,6 +1205,27 @@
         display: inline;
         padding-bottom: 20px;
         border-bottom: 1px solid grey;
+    }
+    /*Mes Commandes*/
+    
+    .mes_commandes table {
+        margin: 40px auto;
+    }
+    
+    .mes_commandes th {
+        font-weight: 400;
+    }
+    
+    .mes_commandes th a {
+        font-weight: 600;
+    }
+    
+    .mes_commandes td {
+        vertical-align: middle;
+    }
+    
+    .mes_commandes .td_gauche {
+        width: 30%;
     }
     /*PAGE NOTRE HISTOIRE*/
     
@@ -1662,6 +1695,10 @@
         .rows3 div {
             margin: 10px;
         }
+        /*index carousel populaire et suggestion */
+        .carousel-lg .carousel-item>div {
+            margin: 0px 0.2%;
+        }
         /*footer - information*/
         #information {
             flex-wrap: wrap;
@@ -1740,7 +1777,7 @@
         .nav-item {
             border-top: 2px outset;
         }
-        .nav-item_ul.visible {
+        .nav-item_ul {
             position: static;
             text-align: center;
             height: 90%;
@@ -1766,6 +1803,19 @@
         }
         .actus .rows3 div {
             width: 40%;
+        }
+        /*index carousel populaire et suggestion */
+        .carousel-lg {
+            display: none;
+        }
+        .carousel-md {
+            display: block;
+        }
+        .carousel-md .carousel-item>div {
+            margin: 0px 2%;
+        }
+        .carousel-md .card {
+            width: 35%;
         }
         /*avis*/
         .avis {
@@ -1926,6 +1976,19 @@
             padding-top: 20px;
             height: 80px;
         }
+        /*index carousel populaire et suggestion */
+        .carousel-sm {
+            display: block;
+        }
+        .carousel-md {
+            display: none;
+        }
+        .carousel-sm .card {
+            width: 70%;
+        }
+        .carousel-sm .card h3 {
+            font-size: 1em;
+        }
         /*footer - information*/
         .unquart {
             width: 100%;
@@ -1978,10 +2041,6 @@
         .liens_info {
             display: none;
         }
-        .liens_info.isvisible {
-            display: block;
-            padding-top: 20px;
-        }
         /*mon compte*/
         .connexion {
             flex-direction: column;
@@ -1989,6 +2048,17 @@
         }
         .col-gauche form {
             border-bottom: 2px solid grey;
+        }
+        .connexion form {
+            width: 100%;
+        }
+        .col-droite label:nth-of-type(6) {
+            display: inline;
+            font-size: 0.85em;
+        }
+        .col-gauche p em,
+        .col-droite p em {
+            font-size: 0.85em;
         }
         /*reservation*/
         .form-reservation {
@@ -2160,19 +2230,8 @@
         }
     }
     
-    @media screen and (max-width:400px) {
-        /*header*/
-        .logo {
-            width: 60%;
-        }
-        .navbar-toggler {
-            width: 20%;
-        }
-        .menu_langue {
-            width: 20%;
-        }
-        /*index*/
-        .main_index .carousel-caption {
-            bottom: 30%!important;
+    @media print {
+        footer {
+            display: none;
         }
     }

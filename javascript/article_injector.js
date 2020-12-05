@@ -1,32 +1,3 @@
-function Article(variete, categorie, images, titre, ref, prix, taille, description, entretien, url) {
-    this.variete = variete;
-    this.categorie = categorie;
-    this.images = images;
-    this.titre = titre;
-    this.ref = ref;
-    this.prix = prix;
-    this.taille = taille;
-    this.description = description;
-    this.entretien = entretien;
-    this.url = url;
-    this.affichage = function() {
-        let carte_article = '<div class="col-6 col-xl-4">' +
-            '<div class="card my-3 border-grey shadow">' +
-            '<a class="stretched-link" href="' + this.url + '"><img class="card-img-top" src="' + this.images[0] + '"alt="' + this.titre + this.categorie + 'homme"></a>' +
-            '<div class="carte-article card-body">' +
-            '<h4 class="card-title">' + this.titre + '</h4>' +
-            '<span class="prix">' + this.prix + '</span>' +
-            '</div>' +
-            '</div>' +
-            '</div>';
-        return carte_article;
-    }
-}
-
-//affichage de la carte article dans la page tous les produits
-//$('.carte_article').html(article.affichage());
-
-
 function chargeArticle(article) {
 
     //affichage du produit en dynamic dans la page article
@@ -43,14 +14,14 @@ function chargeArticle(article) {
         //carousel image
         for (let i = 0; i < article.images.length; i++) {
             let image_produit = $('<div class="carousel-item image_produit"></div>')
-            $('.carousel-inner').prepend(image_produit);
+            $('.img_descr_produit .carousel-inner').prepend(image_produit);
 
             image_produit.prepend('<a href="' + article.images[i] + '"><img src="' + article.images[i] + '" alt="' + article.titre + '"/></a>');
 
 
         }
-        $('.carousel-inner div:nth-of-type(1)').addClass('active');
-        $('.carousel-inner div:nth-of-type(1)').attr('data-interval', '20000');
+        $('.img_descr_produit .carousel-inner div:nth-of-type(1)').addClass('active');
+        $('.img_descr_produit .carousel-inner div:nth-of-type(1)').attr('data-interval', '20000');
 
         //titre ref et prix
         $('.produit_description h3').html(article.titre);
@@ -83,6 +54,24 @@ function chargeArticle(article) {
             else
                 $('.entretien span').text('+ ');
         });
+
+        //carousel suggestion
+        //lg
+        $('.suggestion_car_3_1').html(veste1.affichage2() + pantalon1.affichage2() + pull2.affichage2());
+        $('.suggestion_car_3_2').html(chaussures1.affichage2() + blouse2.affichage2() + robe1.affichage2());
+
+        //md
+        $('.suggestion_car_2_1').html(veste1.affichage2() + pantalon1.affichage2());
+        $('.suggestion_car_2_2').html(pull2.affichage2() + chaussures1.affichage2());
+        $('.suggestion_car_2_3').html(blouse2.affichage2() + robe1.affichage2());
+
+        //sm
+        $('.suggestion_car_1_1').html(veste1.affichage2());
+        $('.suggestion_car_1_2').html(pantalon1.affichage2());
+        $('.suggestion_car_1_3').html(pull2.affichage2());
+        $('.suggestion_car_1_4').html(chaussures1.affichage2());
+        $('.suggestion_car_1_5').html(blouse2.affichage2());
+        $('.suggestion_car_1_6').html(robe1.affichage2());
 
 
 

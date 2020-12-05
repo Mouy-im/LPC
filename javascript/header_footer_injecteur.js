@@ -16,7 +16,7 @@ $(function() {
 
         $(document).on('click', '.nav-item', function() {
 
-            $(this).children().slideToggle('slow').addClass('visible');
+            $(this).children().slideToggle('slow');
         });
 
     });

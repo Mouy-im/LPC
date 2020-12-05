@@ -77,48 +77,65 @@
             <h2>Les plus populaires</h2>
             <div class="green-divider"></div>
             <article class="populaire">
-
-                <div class="row">
-                    <div class="col-6 col-lg-3">
-                        <div class="card my-3 border-grey shadow">
-                            <a class="stretched-link" href="/pages/femme/produits/manteau1.html"><img class="card-img-top" src="/images/femme/pret-a-porter/veste-manteau/manteau1/manteau1_main.jpg" alt="Manteau imitation fourrure"></a>
-                            <div class="carte-article card-body">
-                                <h3 class="card-title">Manteau fourrure</h3>
-                                <span class="prix">99€99</span>
-                            </div>
+                <!--Carousel-lg-->
+                <div class="container-fluid carousel-lg">
+                    <div id="carousel-lg" class="carousel slide" data-ride="carousel" data-interval="9000">
+                        <div class="carousel-inner row w-100 mx-auto" role="listbox">
+                            <div class="populaire_car_3_1 carousel-item active"></div>
+                            <div class="populaire_car_3_2 carousel-item"></div>
                         </div>
+                        <a class="carousel-control-prev" href="#carousel-lg" role="button" data-slide="prev">
+                            <i class="fa fa-chevron-left fa-lg text-muted"></i>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next text-faded" href="#carousel-lg" role="button" data-slide="next">
+                            <i class="fa fa-chevron-right fa-lg text-muted"></i>
+                            <span class="sr-only">Next</span>
+                        </a>
                     </div>
-                    <div class="col-6 col-lg-3">
-                        <div class="card my-3 border-grey shadow">
-                            <a class="stretched-link" href="/pages/femme/produits/manteau2.html"><img class="card-img-top" src="/images/femme/pret-a-porter/veste-manteau/manteau2/manteau2_main.jpg" alt="Duffle-coat mi-long"></a>
-                            <div class="carte-article card-body">
-                                <h3 class="card-title">Duffle-coat</h3>
-                                <span class="prix">89€99</span>
-                            </div>
+                </div>
+                <!--Carousel-md-->
+                <div class="container-fluid carousel-md">
+                    <div id="carousel-md" class="carousel slide" data-ride="carousel" data-interval="9000">
+                        <div class="carousel-inner row w-100 mx-auto" role="listbox">
+                            <div class="populaire_car_2_1 carousel-item active"></div>
+                            <div class="populaire_car_2_2 carousel-item"></div>
+                            <div class="populaire_car_2_3 carousel-item"></div>
                         </div>
+                        <a class="carousel-control-prev" href="#carousel-md" role="button" data-slide="prev">
+                            <i class="fa fa-chevron-left fa-lg text-muted"></i>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next text-faded" href="#carousel-md" role="button" data-slide="next">
+                            <i class="fa fa-chevron-right fa-lg text-muted"></i>
+                            <span class="sr-only">Next</span>
+                        </a>
                     </div>
-                    <div class="col-6 col-lg-3">
-                        <div class="carte-article card my-3 border-grey shadow">
-                            <a class="stretched-link" href="/pages/femme/produits/veste1.html"><img class="card-img-top" src="/images/femme/pret-a-porter/veste-manteau/veste1/veste1_main.jpg" alt="Blouson court vert foncé"></a>
-                            <div class="carte-article card-body">
-                                <h3 class="card-title">Blouson court</h3>
-                                <span class="prix">49€99</span>
-                            </div>
+                </div>
+                <!--Carousel-sm-->
+                <div class="container-fluid carousel-sm">
+                    <div id="carousel-sm" class="carousel slide" data-ride="carousel" data-interval="9000">
+                        <div class="carousel-inner row w-100 mx-auto" role="listbox">
+                            <div class="populaire_car_1_1 carousel-item active"></div>
+                            <div class="populaire_car_1_2 carousel-item"></div>
+                            <div class="populaire_car_1_3 carousel-item"></div>
+                            <div class="populaire_car_1_4 carousel-item"></div>
+                            <div class="populaire_car_1_5 carousel-item"></div>
+                            <div class="populaire_car_1_6 carousel-item"></div>
                         </div>
+                        <a class="carousel-control-prev" href="#carousel-sm" role="button" data-slide="prev">
+                            <i class="fa fa-chevron-left fa-lg text-muted"></i>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next text-faded" href="#carousel-sm" role="button" data-slide="next">
+                            <i class="fa fa-chevron-right fa-lg text-muted"></i>
+                            <span class="sr-only">Next</span>
+                        </a>
                     </div>
-                    <div class="col-6 col-lg-3">
-                        <div class="card my-3 border-grey shadow">
-                            <a class="stretched-link" href="/pages/femme/produits/veste2.html"><img class="card-img-top" src="/images/femme/pret-a-porter/veste-manteau/veste2/veste2_main.jpg" alt="Trench mi-long"></a>
-                            <div class="carte-article card-body">
-                                <h3 class="card-title">Trench mi-long</h3>
-                                <span class="prix">59€99</span>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
             </article>
         </div>
+
 
         <!-- Actus-->
         <div class="actus">
@@ -255,7 +272,9 @@
     <footer class="footer_dynamic"></footer>
 
     <script src="/javascript/header_footer_injecteur.js"></script>
-
+    <script src="/javascript/constructor_article.js"></script>
+    <script src="/javascript/article_femme/articles.js"></script>
+    <script src="/javascript/script.js"></script>
 
 </body>
 
