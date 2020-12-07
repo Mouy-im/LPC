@@ -405,8 +405,10 @@
         text-align: left;
         position: absolute;
         left: 0px;
+        top: 55px;
         padding: 20px 50px;
         height: 650px;
+        width: 50%;
     }
     
     .navbar-nav .nav-item:nth-of-type(5) .nav-item_ul,
@@ -438,14 +440,57 @@
     .nav-sous-categorie a {
         font-weight: 400;
     }
-    /* .menu_divider {
-        border-bottom: 3px solid #7de7d6;
-        border-radius: 10px;
-        width: 60px;
-        margin-left: 25px;
-        margin-top: 10px;
-        margin-bottom: 5px;
-    }*/
+    /*images-lien dans la nav*/
+    
+    .lien-img-nav a:nth-of-type(1) {
+        position: absolute;
+        top: 15%;
+        left: 30%;
+    }
+    
+    .lien-img-nav a:nth-of-type(2) {
+        position: absolute;
+        top: 15%;
+        left: 60%;
+    }
+    
+    .lien-img-nav a {
+        overflow: hidden;
+        width: 25%;
+    }
+    
+    .lien-img-nav img {
+        width: 100%;
+        object-fit: cover;
+        transition-property: all;
+        transition-duration: 0.8s;
+    }
+    
+    .lien-img-nav img:hover {
+        transform: scale(1.2);
+        opacity: 0.8;
+    }
+    
+    .lien-img-nav span {
+        position: absolute;
+        left: 0%;
+        bottom: 40%;
+        background-color: rgba(95, 88, 88, 0.5);
+        color: white!important;
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        text-decoration: none!important;
+        transition-property: all;
+        transition-duration: 0.8s;
+        font-weight: 400;
+        font-size: 1.3em;
+    }
+    
+    .lien-img-nav span:hover {
+        color: black!important;
+        background-color: rgba(235, 235, 235, 0.5);
+    }
     /*fa-user*/
     
     .user hr {
@@ -964,7 +1009,6 @@
     .rating .stars {
         display: inline-flex;
         justify-content: center;
-        /*font-size: 3em;*/
     }
     
     .rating .stars:hover .fa-star {
@@ -1503,6 +1547,11 @@
         top: 50%;
     }
     
+    .rows4 span:hover {
+        color: black!important;
+        background-color: rgba(235, 235, 235, 0.5);
+    }
+    
     #pret-a-porter>div {
         margin-bottom: 100px;
         padding-top: 100px;
@@ -1847,8 +1896,11 @@
             text-align: center;
             height: 90%;
         }
-        .menu_divider {
-            margin: 20px auto;
+        .lien-img-nav {
+            display: none;
+        }
+        .lien-img-nav a {
+            display: none;
         }
         /*footer*/
         .news form {

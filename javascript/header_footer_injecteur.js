@@ -5,10 +5,6 @@ $(function() {
             $('.div_search').toggle('slow');
         });
 
-        /*$(document).on('click', '.nav-item', function() {
-            $(this).children().toggle('slow');
-        });*/
-
         $(document).on('click', '.user', function() {
             $('.user_ul').toggle('slow');
         });
