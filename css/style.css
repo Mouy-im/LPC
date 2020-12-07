@@ -438,15 +438,14 @@
     .nav-sous-categorie a {
         font-weight: 400;
     }
-    
-    .menu_divider {
+    /* .menu_divider {
         border-bottom: 3px solid #7de7d6;
         border-radius: 10px;
         width: 60px;
         margin-left: 25px;
         margin-top: 10px;
         margin-bottom: 5px;
-    }
+    }*/
     /*fa-user*/
     
     .user hr {
@@ -812,7 +811,7 @@
     #basdepage .retour_scroll {
         position: fixed;
         right: 0%;
-        bottom: 6%;
+        bottom: 14%;
         z-index: 1;
         width: 50px;
     }
@@ -1548,7 +1547,6 @@
         margin: 0 auto;
         background-color: white;
         font-size: 0.8em;
-        ;
     }
     
     .carousel_img_produit {
@@ -1975,6 +1973,9 @@
             font-size: 0.8em;
         }
         /*header*/
+        #offre p {
+            font-size: 0.6em;
+        }
         .navbar {
             position: static;
         }
@@ -2112,7 +2113,7 @@
         }
         /*footer bas de page*/
         #basdepage .retour_scroll {
-            bottom: 9%;
+            bottom: 10%;
         }
         #bas {
             font-size: 0.9em;
@@ -2203,9 +2204,8 @@
             bottom: 0px;
             left: 0px;
             width: 100%;
-            padding: 10px;
+            padding: 15px 0px 50px;
             z-index: 1;
-            box-sizing: content-box;
             margin: 0;
             border-radius: 0px;
             border: none;
