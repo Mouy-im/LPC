@@ -3,15 +3,72 @@ function chargeArticle(article) {
     //affichage du produit en dynamic dans la page article
     $("main").load("/pages/homme/produits/article.html", function() {
 
-        //carousel image
+        //breadcrumb
+        $('#pap_access').html(article.variete);
+        if (article.variete == 'prêt-à-porter') {
+            $('#pap_access').html('Prêt-à-porter');
+            $('#pap_access').attr('href', '/pages/homme/homme_produits.html?#pap');
+        } else {
+            $('#pap_access').html('Accessoires');
+            $('#pap_access').attr('href', '/pages/homme/homme_produits.html?#accessoires');
+        }
 
+        $('#categorie').html(article.categorie);
+        switch (article.categorie) {
+            case 'jean':
+                $('#categorie').html('Jeans');
+                $('#categorie').attr('href', '/pages/homme/homme_produits.html?#jean');
+                break;
+            case 'chemise':
+                $('#categorie').html('Chemises');
+                $('#categorie').attr('href', '/pages/homme/homme_produits.html?#chemise');
+                break;
+            case 'manteau':
+                $('#categorie').html('Manteaux');
+                $('#categorie').attr('href', '/pages/homme/homme_produits.html?#manteau');
+                break;
+            case 'polo':
+                $('#categorie').html('Polos');
+                $('#categorie').attr('href', '/pages/homme/homme_produits.html?#polo');
+                break;
+            case 'pull':
+                $('#categorie').html('Pulls');
+                $('#categorie').attr('href', '/pages/homme/homme_produits.html?#pull');
+                break;
+            case 'sweat':
+                $('#categorie').html('Sweats');
+                $('#categorie').attr('href', '/pages/homme/homme_produits.html?#sweat');
+                break;
+            case 'tshirt':
+                $('#categorie').html('T-shirts');
+                $('#categorie').attr('href', '/pages/homme/homme_produits.html?#tshirt');
+                break;
+            case 'chaussure':
+                $('#categorie').html('Chaussures');
+                $('#categorie').attr('href', '/pages/homme/homme_produits.html?#chaussures');
+                break;
+            case 'noeud':
+                $('#categorie').html('Noeuds');
+                $('#categorie').attr('href', '/pages/homme/homme_produits.html?#noeud');
+                break;
+            case 'ceinture':
+                $('#categorie').html('Ceintures');
+                $('#categorie').attr('href', '/pages/homme/homme_produits.html?#ceinture');
+                break;
+
+            default:
+                $('#categorie').html(article.categorie);
+        }
+
+        const word = article.titre.split(' ');
+        $('#current').html(word[0]);
+
+        //carousel image
         for (let i = 0; i < article.images.length; i++) {
             let image_produit = $('<div class="carousel-item image_produit"></div>')
             $('.img_descr_produit .carousel-inner').prepend(image_produit);
 
             image_produit.prepend('<a href="' + article.images[i] + '"><img src="' + article.images[i] + '" alt="' + article.titre + '"/></a>');
-
-
         }
         $('.img_descr_produit .carousel-inner div:nth-of-type(1)').addClass('active');
         $('.img_descr_produit .carousel-inner div:nth-of-type(1)').attr('data-interval', '20000');
@@ -47,9 +104,6 @@ function chargeArticle(article) {
             else
                 $('.entretien span').text('+ ');
         });
-
-
-
 
         //carousel suggestion
         //lg

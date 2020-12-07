@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <link href="https://fonts.googleapis.com/css2?family=Overlock&family=Satisfy&display=swap" rel="stylesheet">
+
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="/javascript/jquery-ui-1.12.1/jquery-ui.structure.min.css">
@@ -55,9 +55,9 @@
                 <label class="label1" for="email">Email*</label><br>
                 <input class="input1" id="email" type="email" size="30" placeholder="Votre email" required><br>
 
-                <label class="label1" for="rdv">Choississez votre disponibilité*</label><br>
-                <input class="input1" type="date" id="rdv" name="rdv" min="2020-12-08" max="2022-01-01" required /><br>
-                <div class="datepicker"></div>
+                <label class="label1" for="date">Choississez votre disponibilité*</label><br>
+                <input class="input1" type="text" id="date" name="date_rdv" placeholder="jj/mm/aaaa" required /><br>
+
                 <label class="label1" for="message">Message*</label><br>
                 <textarea id="message" placeholder="Votre message" required></textarea><br>
 
@@ -74,7 +74,6 @@
     <hr/>
     <!--Footer-->
     <footer class="footer_dynamic"></footer>
-
     <script src="/javascript/header_footer_injecteur.js"></script>
 
 </body>

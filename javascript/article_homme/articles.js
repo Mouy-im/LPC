@@ -245,7 +245,7 @@ let tshirt3 = new Article(
 
 //Chaussures
 let chaussures1 = new Article(
-    'prêt-à-porter',
+    'accessoires',
     'chaussure', ['/images/homme/accessoires/chaussures/chaussures1/chaussures1_main.jpg', '/images/homme/accessoires/chaussures/chaussures1/chaussures1_1.jpg', '/images/homme/accessoires/chaussures/chaussures1/chaussures1_2.jpg', '/images/homme/accessoires/chaussures/chaussures1/chaussures1_3.jpg', '/images/homme/accessoires/chaussures/chaussures1/chaussures1_4.jpg'],
     'Chuck taylor',
     'Référence 2491390 / GHW256',
@@ -255,7 +255,7 @@ let chaussures1 = new Article(
     '/pages/homme/produits/chaussures1.html');
 
 let chaussures2 = new Article(
-    'prêt-à-porter',
+    'accessoires',
     'chaussure', ['/images/homme/accessoires/chaussures/chaussures2/chaussures2_main.jpg', '/images/homme/accessoires/chaussures/chaussures2/chaussures2_1.jpg', '/images/homme/accessoires/chaussures/chaussures2/chaussures2_2.jpg', '/images/homme/accessoires/chaussures/chaussures2/chaussures2_3.jpg', '/images/homme/accessoires/chaussures/chaussures2/chaussures2_4.jpg'],
     'Baskets cuir marron',
     'Référence 2491390 / GHW256',
@@ -265,7 +265,7 @@ let chaussures2 = new Article(
     '/pages/homme/produits/chaussures2.html');
 
 let chaussures3 = new Article(
-    'prêt-à-porter',
+    'accessoires',
     'chaussure', ['/images/homme/accessoires/chaussures/chaussures3/chaussures3_main.jpg', '/images/homme/accessoires/chaussures/chaussures3/chaussures3_1.jpg', '/images/homme/accessoires/chaussures/chaussures3/chaussures3_2.jpg', '/images/homme/accessoires/chaussures/chaussures3/chaussures3_3.jpg'],
     'Baskets Leather',
     'Référence 2491390 / GHW256',
@@ -276,7 +276,7 @@ let chaussures3 = new Article(
 
 //noeuds pap
 let noeud1 = new Article(
-    'prêt-à-porter',
+    'accessoires',
     'noeud', ['/images/homme/accessoires/noeuds/noeud1/noeud1_main.jpg', '/images/homme/accessoires/noeuds/noeud1/noeud1_1.jpg', '/images/homme/accessoires/noeuds/noeud1/noeud1_2.jpg', '/images/homme/accessoires/noeuds/noeud1/noeud1_3.jpg'],
     'Noeud papillon bois',
     'Référence 2491390 / GHW256',
@@ -286,7 +286,7 @@ let noeud1 = new Article(
     '/pages/homme/produits/noeud1.html');
 
 let noeud2 = new Article(
-    'prêt-à-porter',
+    'accessoires',
     'noeud', ['/images/homme/accessoires/noeuds/noeud2/noeud2_main.jpg', '/images/homme/accessoires/noeuds/noeud2/noeud2_1.jpg'],
     'Noeud papillon navy',
     'Référence 2491390 / GHW256',
@@ -296,7 +296,7 @@ let noeud2 = new Article(
     '/pages/homme/produits/noeud2.html');
 
 let noeud3 = new Article(
-    'prêt-à-porter',
+    'accessoires',
     'noeud', ['/images/homme/accessoires/noeuds/noeud3/noeud3_main.jpg', '/images/homme/accessoires/noeuds/noeud3/noeud3_1.jpg'],
     'Noeud papillon en métal',
     'Référence 2491390 / GHW256',
@@ -307,7 +307,7 @@ let noeud3 = new Article(
 
 //ceintures
 let ceinture1 = new Article(
-    'prêt-à-porter',
+    'accessoires',
     'ceinture', ['/images/homme/accessoires/ceintures/ceinture1/ceinture1_main.jpg', '/images/homme/accessoires/ceintures/ceinture1/ceinture1_1.jpg'],
     'Ceinture tressée noir',
     'Référence 2491390 / GHW256',
@@ -317,7 +317,7 @@ let ceinture1 = new Article(
     '/pages/homme/produits/ceinture1.html');
 
 let ceinture2 = new Article(
-    'prêt-à-porter',
+    'accessoires',
     'ceinture', ['/images/homme/accessoires/ceintures/ceinture2/ceinture2_main.jpg', '/images/homme/accessoires/ceintures/ceinture2/ceinture2_1.jpg', '/images/homme/accessoires/ceintures/ceinture2/ceinture2_2.jpg'],
     'Ceinture multicolore',
     'Référence 2491390 / GHW256',
@@ -327,7 +327,7 @@ let ceinture2 = new Article(
     '/pages/homme/produits/ceinture2.html');
 
 let ceinture3 = new Article(
-    'prêt-à-porter',
+    'accessoires',
     'ceinture', ['/images/homme/accessoires/ceintures/ceinture3/ceinture3_main.jpg', '/images/homme/accessoires/ceintures/ceinture3/ceinture3_1.jpg', '/images/homme/accessoires/ceintures/ceinture3/ceinture3_2.jpg', '/images/homme/accessoires/ceintures/ceinture3/ceinture3_3.jpg'],
     'Ceinture cuir',
     'Référence 2491390 / GHW256',

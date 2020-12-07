@@ -1,6 +1,7 @@
     @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Pacifico&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Overlock&display=swap');
     * {
-        font-family: Overlock, sans-serif;
+        font-family: 'Overlock', sans-serif;
         color: black;
         margin: 0px;
         padding: 0px;
@@ -69,6 +70,13 @@
         background-color: whitesmoke;
         padding: 0!important;
     }
+    
+    .grey-divider {
+        width: 100px;
+        height: 3px;
+        background: #333;
+        margin: 20px auto 50px;
+    }
     /*carte produit*/
     
     .carte-article.card-body {
@@ -87,6 +95,20 @@
     }
     /*FORMULAIRE*/
     
+    input[type="text"],
+    input[type="email"],
+    input[type="submit"],
+    textarea {
+        outline: none;
+    }
+    
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    input[type="submit"]:active,
+    textarea:focus {
+        box-shadow: 1px 1px 10px 1px grey;
+    }
+    
     .input1 {
         border-radius: 5px;
         padding: 10px;
@@ -94,6 +116,7 @@
         margin-top: 5px;
         width: 100%;
         border: 1px solid rgb(204, 204, 204);
+        outline: none;
     }
     
     input[type=file] {
@@ -148,8 +171,9 @@
     }
     
     select {
-        border: 2px solid black;
+        border: 2px solid rgb(204, 204, 204);
         background-color: transparent;
+        outline: none;
     }
     
     form {
@@ -282,6 +306,7 @@
     }
     
     #input_search {
+        font-family: 'Overlock', FontAwesome;
         border: none;
         box-shadow: 0px 10px 10px -10px grey;
         background-color: transparent;
@@ -314,10 +339,6 @@
     #input_search::placeholder {
         color: black;
         text-align: center;
-    }
-    
-    .div_search input {
-        font-family: Overlock, FontAwesome;
     }
     /*navbar bas liens principaux*/
     
@@ -656,6 +677,13 @@
     footer {
         padding-top: 30px;
     }
+    
+    footer h2 {
+        font-size: 1.1em!important;
+        font-family: 'Overlock', sans-serif;
+        margin: 0px;
+        padding: 0;
+    }
     /*FOOTER ARTICLE INFORMATION*/
     
     #information {
@@ -672,13 +700,13 @@
         box-sizing: border-box;
     }
     
-    .unquart h4 {
-        padding-bottom: 10px;
+    .unquart>h2 {
+        padding-bottom: 10px!important;
     }
     
     .unquart i {
         padding: 0px 5px;
-        font-size: 1.2em!important;
+        font-size: 1em;
     }
     /*FOOTER ARTICLE NEWSLETTER*/
     
@@ -692,7 +720,7 @@
     }
     
     #reseauxnewsletter h2 {
-        font-size: 1.2em!important;
+        margin-bottom: 10px;
     }
     
     .reseaux {
@@ -714,15 +742,19 @@
         min-width: 0px;
         width: 70%;
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
+        align-self: center;
     }
     
-    .news form input {
-        margin: 5px;
+    #reseauxnewsletter .input1 {
+        margin: 0px;
+        width: 70%;
     }
     
     #reseauxnewsletter .input-submit {
         width: 100px;
+        display: block;
+        margin: auto 5%;
     }
     /*FOOTER ARTICLE LIENS*/
     
@@ -740,8 +772,8 @@
         padding: 20px;
     }
     
-    #liens h3 {
-        font-weight: 600;
+    .untiers h2 {
+        text-align: left;
     }
     
     .liens_info {
@@ -765,7 +797,6 @@
     }
     
     #basdepage a {
-        font-weight: 600;
         color: whitesmoke!important;
     }
     
@@ -781,7 +812,7 @@
     #basdepage .retour_scroll {
         position: fixed;
         right: 0%;
-        bottom: 5%;
+        bottom: 6%;
         z-index: 1;
         width: 50px;
     }
@@ -862,7 +893,7 @@
     }
     
     .form-reservation h2 {
-        font-family: overlock sans-serif;
+        font-family: 'overlock', sans-serif;
     }
     
     .entete-reservation {
@@ -875,13 +906,6 @@
     .avis>div {
         text-align: center;
         margin: 50px auto;
-    }
-    
-    .grey-divider {
-        width: 100px;
-        height: 2px;
-        background: #333;
-        margin: 20px auto;
     }
     
     .avis {
@@ -900,6 +924,26 @@
     .avis_gauche p {
         text-align: center;
         height: 100%;
+    }
+    
+    .avis-texte p {
+        padding: 10px;
+    }
+    
+    .carte_avis {
+        background-color: whitesmoke;
+        width: 70%;
+        margin: 20px auto;
+        border-radius: 20px;
+    }
+    
+    .avis_nom {
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+    
+    .carte-date {
+        padding-bottom: 20px;
     }
     
     .rating {
@@ -945,7 +989,7 @@
     }
     
     .presse-actu h2 {
-        font-family: overlock sans-serif;
+        font-family: 'overlock', sans-serif;
         margin: 10px 0px;
         padding: 0px;
         font-size: 1em;
@@ -967,6 +1011,10 @@
     
     .actualite_e .card {
         margin-bottom: 2%;
+    }
+    
+    .carte-date {
+        margin-bottom: 0px;
     }
     /*Plan du site*/
     
@@ -1073,7 +1121,7 @@
     }
     
     .panier h2 {
-        font-family: overlock sans-serif;
+        font-family: 'overlock', sans-serif;
         font-size: 1.5rem;
     }
     /***Partie gauche panier***/
@@ -1376,12 +1424,19 @@
         margin-bottom: 50px;
     }
     
+    .nav-aside {
+        position: fixed;
+        left: 10px;
+        top: 870px;
+        cursor: pointer;
+    }
+    
     .menu_gauche {
-        padding-left: 30px;
+        padding-left: 15px;
         margin-right: 20px;
         width: 17%;
         min-width: 215px;
-        top: 150px;
+        top: 170px;
         position: fixed;
         left: 0px;
         bottom: 0px;
@@ -1489,7 +1544,11 @@
     }
     
     .breadcrumb {
+        width: 80%;
+        margin: 0 auto;
         background-color: white;
+        font-size: 0.8em;
+        ;
     }
     
     .carousel_img_produit {
@@ -1731,8 +1790,13 @@
             width: 50%;
         }
         .suggestion {
-            /*width: 100%;*/
             margin: auto;
+        }
+        .breadcrumb {
+            width: 100%;
+        }
+        .nav-aside {
+            display: none;
         }
     }
     
@@ -1764,6 +1828,9 @@
         }
         .logo {
             width: 80%;
+        }
+        .logo_on_scroll {
+            display: none;
         }
         .navbar-toggler {
             width: 10%;
@@ -1899,6 +1966,9 @@
     }
     
     @media screen and (max-width:768px) {
+        a[href="tel:+33930688240"] {
+            font-weight: 600;
+        }
         /*carte-article*/
         .carte-article h3,
         .carte-article h4 {
@@ -2009,11 +2079,11 @@
         }
         .news .input1 {
             width: 90%!important;
-            margin: 5px auto 10px;
+            margin: 5px auto 10px!important;
             text-align: center;
         }
         .news .input-submit {
-            margin: 10px auto;
+            margin: 10px auto!important;
         }
         .news form {
             display: flex;
@@ -2027,10 +2097,9 @@
             flex-direction: column;
             text-align: center;
         }
-        #liens h3 {
+        #liens h2 {
             cursor: pointer;
-            padding: 0px;
-            margin: 0px;
+            text-align: center;
         }
         .untiers {
             width: 100%;
@@ -2041,14 +2110,24 @@
         .liens_info {
             display: none;
         }
+        /*footer bas de page*/
+        #basdepage .retour_scroll {
+            bottom: 9%;
+        }
+        #bas {
+            font-size: 0.9em;
+        }
         /*mon compte*/
         .connexion {
             flex-direction: column;
             justify-content: center;
         }
-        .col-gauche form {
-            border-bottom: 2px solid grey;
+        .connexion>div {
+            width: 100%;
         }
+        /*.col-gauche form {
+            border-bottom: 2px solid grey;
+        }*/
         .connexion form {
             width: 100%;
         }
@@ -2082,6 +2161,12 @@
         .pages_avis>p {
             width: 90%;
         }
+        .carte_avis {
+            width: 80%;
+        }
+        .avis_droit_form form {
+            width: 100%;
+        }
         /*Pages catégories*/
         .rows4 div span {
             font-size: 1.2em;
@@ -2107,6 +2192,9 @@
             margin: 0px auto;
             text-align: center;
         }
+        #form_produit label {
+            width: 20%;
+        }
         .rows4 span {
             font-size: 0.9em!important;
         }
@@ -2120,7 +2208,7 @@
             box-sizing: content-box;
             margin: 0;
             border-radius: 0px;
-            ;
+            border: none;
         }
         /*panier*/
         .div_descr_panier {
@@ -2154,9 +2242,8 @@
             min-width: 0px;
         }
         /*header*/
-        nav {
+        nav.navbar {
             width: 100%;
-            margin-left: 100px;
         }
         div.navbar {
             width: 100%;
@@ -2194,13 +2281,8 @@
         }
         /*moncompte*/
         .connexion-form {
-            width: 70%;
-            min-width: 200px;
-            margin: 0px auto;
-        }
-        .col-gauche,
-        .col-droite {
             width: 100%;
+            min-width: 200px;
             margin: 0px auto;
         }
         /*reservation*/
@@ -2226,7 +2308,7 @@
         }
         #input_code_promo {
             min-width: 0px;
-            width: 100%;
+            width: 80%;
         }
     }
     

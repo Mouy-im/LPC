@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <link href="https://fonts.googleapis.com/css2?family=Overlock&family=Satisfy&display=swap" rel="stylesheet">
+
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
@@ -126,11 +126,11 @@
                 <table class="tableau_panier">
                     <tr>
                         <td>Sous total (TTC)</td>
-                        <td class="right">199<sup>€88</sup</td>
+                        <td class="right">199<sup>€88</sup></td>
                     </tr>
                 </table>
                 <hr/> CODE PROMO<br/>
-                <input id="input_code_promo" type="text" value="Saisissez votre code">
+                <input id="input_code_promo" type="text" placeholder="Saisissez votre code">
                 <input id="btn_code_promo" type="submit" value="OK">
                 <hr>
                 <table class="tableau_panier">
@@ -145,19 +145,84 @@
                     </tr>
                 </table>
                 <input type="checkbox" name="cgv" id="cvg" required><label for="cvg"><em>J'accepte les <a href="/pages/informations/cgv.html">CVG</a><sup> (1)</sup></em></label>
-                <input class="input-submit commander" type="submit" value="COMMANDER"><em><sup>*</sup>À partir de 30<sup>€</sup> ou en magasin</em><br/>
+                <input class="input-submit commander" type="submit" value="COMMANDER"><em><sup>*</sup>À partir de 30 euros ou en magasin</em><br/>
                 <em><sup>(1)</sup>Conditions générales de vente</em>
             </div>
 
         </div>
     </main>
+    <!-- Compléter votre tenue-->
+    <div class="plus_panier">
+        <h2>Compléter votre tenue</h2>
+
+        <article class="plus_panier">
+            <!--Carousel-lg-->
+            <div class="container-fluid carousel-lg">
+                <div id="carousel-lg" class="carousel slide" data-ride="carousel" data-interval="9000">
+                    <div class="carousel-inner row w-100 mx-auto" role="listbox">
+                        <div class="plus_panier_car_3_1 carousel-item active"></div>
+                        <div class="plus_panier_car_3_2 carousel-item"></div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carousel-lg" role="button" data-slide="prev">
+                        <i class="fa fa-chevron-left fa-lg text-muted"></i>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next text-faded" href="#carousel-lg" role="button" data-slide="next">
+                        <i class="fa fa-chevron-right fa-lg text-muted"></i>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+            <!--Carousel-md-->
+            <div class="container-fluid carousel-md">
+                <div id="carousel-md" class="carousel slide" data-ride="carousel" data-interval="9000">
+                    <div class="carousel-inner row w-100 mx-auto" role="listbox">
+                        <div class="plus_panier_car_2_1 carousel-item active"></div>
+                        <div class="plus_panier_car_2_2 carousel-item"></div>
+                        <div class="plus_panier_car_2_3 carousel-item"></div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carousel-md" role="button" data-slide="prev">
+                        <i class="fa fa-chevron-left fa-lg text-muted"></i>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next text-faded" href="#carousel-md" role="button" data-slide="next">
+                        <i class="fa fa-chevron-right fa-lg text-muted"></i>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+            <!--Carousel-sm-->
+            <div class="container-fluid carousel-sm">
+                <div id="carousel-sm" class="carousel slide" data-ride="carousel" data-interval="9000">
+                    <div class="carousel-inner row w-100 mx-auto" role="listbox">
+                        <div class="plus_panier_car_1_1 carousel-item active"></div>
+                        <div class="plus_panier_car_1_2 carousel-item"></div>
+                        <div class="plus_panier_car_1_3 carousel-item"></div>
+                        <div class="plus_panier_car_1_4 carousel-item"></div>
+                        <div class="plus_panier_car_1_5 carousel-item"></div>
+                        <div class="plus_panier_car_1_6 carousel-item"></div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carousel-sm" role="button" data-slide="prev">
+                        <i class="fa fa-chevron-left fa-lg text-muted"></i>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next text-faded" href="#carousel-sm" role="button" data-slide="next">
+                        <i class="fa fa-chevron-right fa-lg text-muted"></i>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </article>
+    </div>
     <hr/>
 
     <!--Footer-->
     <footer class="footer_dynamic"></footer>
 
     <script src="/javascript/header_footer_injecteur.js"></script>
-
+    <script src="/javascript/constructor_article.js"></script>
+    <script src="/javascript/article_femme/articles.js"></script>
+    <script src="/javascript/script_panier.js"></script>
 </body>
 
 </html>
