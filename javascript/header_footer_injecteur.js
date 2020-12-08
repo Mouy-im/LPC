@@ -3,17 +3,19 @@ $(function() {
         //apparition de la barre de recherche
         $(document).on('click', '.icon_loupe', function() {
             $('.div_search').toggle('slow');
-        });
 
+        });
         $(document).on('click', '.user', function() {
             $('.user_ul').toggle('slow');
         });
 
 
         $(document).on('click', '.nav-item', function() {
+            $(this).children().stop().slideToggle('slow');
 
-            $(this).children().slideToggle('slow');
         });
+
+
 
     });
 

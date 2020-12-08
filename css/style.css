@@ -246,6 +246,10 @@
         width: 15%;
     }
     
+    .navbar-toggler:focus {
+        outline: none;
+    }
+    
     div.logo {
         text-align: center;
     }
@@ -898,8 +902,10 @@
         margin-bottom: 40px;
     }
     
-    .contact-droit h3 {
+    .contact-droit h2 {
+        font-family: 'Overlock', sans-serif;
         padding-bottom: 10px;
+        padding-top: 20px;
     }
     /*PAGE RECRUTEMENT*/
     
@@ -923,7 +929,7 @@
     
     #bg-reservation {
         width: 100%;
-        background: url(/images/relooking_il.jpg)no-repeat center;
+        background: url(/images/relooking_il.jpg)no-repeat right;
         background-size: cover;
         padding: 50px;
     }
@@ -1936,7 +1942,7 @@
         }
         /*avis*/
         .avis {
-            flex-direction: column;
+            flex-direction: column-reverse;
         }
         .avis>div {
             width: 90%;
@@ -2170,6 +2176,10 @@
         #bas {
             font-size: 0.9em;
         }
+        /*contact*/
+        .contact-gauche form {
+            width: 95%;
+        }
         /*mon compte*/
         .connexion {
             flex-direction: column;
@@ -2310,6 +2320,10 @@
         .menu_langue {
             width: 15%;
         }
+        /*footer*/
+        .unquart {
+            min-width: 150px;
+        }
         /*Index*/
         .main_index .carousel-caption {
             border-radius: 50px 15px;
@@ -2340,10 +2354,13 @@
         /*reservation*/
         #bg-reservation {
             padding: 0;
+            background-position-x: 65%;
         }
         .form-reservation {
-            width: 90%;
-            min-width: 0;
+            min-width: 0px;
+        }
+        .form-reservation form {
+            width: 95%;
         }
         .form-reservation h1 {
             font-size: 1.5em;
@@ -2351,12 +2368,9 @@
         .form-reservation h2 {
             font-size: 1em;
         }
-        .entete-reservation {
-            width: 100%;
-        }
         /*panier*/
         .panier_droit {
-            min-width: 0;
+            min-width: 0px;
         }
         #input_code_promo {
             min-width: 0px;
